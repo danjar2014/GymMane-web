@@ -1418,7 +1418,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get importHint =>
-      'Wähle ein aus SouyzGym exportiertes .zip- (oder älteres .json-) Backup. Es ersetzt deine aktuellen Daten, einschließlich Medien.';
+      'Wähle ein aus SoyouzGym exportiertes .zip- (oder älteres .json-) Backup. Es ersetzt deine aktuellen Daten, einschließlich Medien.';
 
   @override
   String get import => 'Importieren';
@@ -1471,7 +1471,7 @@ class AppLocalizationsDe extends AppLocalizations {
   }
 
   @override
-  String get aboutGymmane => 'Über SouyzGym';
+  String get aboutGymmane => 'Über SoyouzGym';
 
   @override
   String get yourProfile => 'DEIN PROFIL';
@@ -2235,7 +2235,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get aiIntro =>
-      'SouyzGym spricht nie mit einer KI. Du exportierst deine Übungsliste, fügst sie in einen Assistenten deiner Wahl ein und importierst dessen Antwort wieder. Dein Handy sendet von selbst nichts nach außen.';
+      'SoyouzGym spricht nie mit einer KI. Du exportierst deine Übungsliste, fügst sie in einen Assistenten deiner Wahl ein und importierst dessen Antwort wieder. Dein Handy sendet von selbst nichts nach außen.';
 
   @override
   String aiMissing(int n) {
@@ -2261,7 +2261,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get awardFirstStepName => 'Erster Schritt';
 
   @override
-  String get awardFirstStepLine => 'Willkommen bei SouyzGym. Das hier geht aufs haus.';
+  String get awardFirstStepLine => 'Willkommen bei SoyouzGym. Das hier geht aufs haus.';
 
   @override
   String get awardFirstWorkoutName => 'Erstes Training';
@@ -2864,7 +2864,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String shareMessage(String name) {
-    return '$name: öffne die Datei mit SouyzGym, um sie hinzuzufügen.';
+    return '$name: öffne die Datei mit SoyouzGym, um sie hinzuzufügen.';
   }
 
   @override
@@ -2872,7 +2872,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get importPasteHint =>
-      'Füge hier eine Routine ein: aus SouyzGym geteilt, eine KI-Antwort, JSON oder CSV.';
+      'Füge hier eine Routine ein: aus SoyouzGym geteilt, eine KI-Antwort, JSON oder CSV.';
 
   @override
   String get pasteAction => 'Einfügen';
@@ -2904,11 +2904,11 @@ class AppLocalizationsDe extends AppLocalizations {
   }
 
   @override
-  String get nothingToImport => 'Hier ist nichts, was SouyzGym importieren kann';
+  String get nothingToImport => 'Hier ist nichts, was SoyouzGym importieren kann';
 
   @override
   String get aiStepCopy =>
-      'Kopiere die Anfrage. Sie enthält deine Übungsliste und das Format, das SouyzGym liest.';
+      'Kopiere die Anfrage. Sie enthält deine Übungsliste und das Format, das SoyouzGym liest.';
 
   @override
   String get aiStepAsk =>
@@ -3058,7 +3058,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get shareIntroBody =>
-      'Schick ihn deinem Partner, einem Freund oder deiner Familie. Sie bekommen eine kleine Datei, die sich in SouyzGym öffnet und ihn mit einem Tipp hinzufügt, samt Sätzen und Gewichten.';
+      'Schick ihn deinem Partner, einem Freund oder deiner Familie. Sie bekommen eine kleine Datei, die sich in SoyouzGym öffnet und ihn mit einem Tipp hinzufügt, samt Sätzen und Gewichten.';
 
   @override
   String get removedFromRoutine => 'Aus dem Plan entfernt';
@@ -3210,7 +3210,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get stepsInfoLocal =>
-      'Deine Schritte bleiben auf deinem Handy. SouyzGym verbindet sich nie mit dem Internet.';
+      'Deine Schritte bleiben auf deinem Handy. SoyouzGym verbindet sich nie mit dem Internet.';
 
   @override
   String get stepsInfoOff => 'Jederzeit abschaltbar, in den Einstellungen oder in Health Connect.';
@@ -4620,7 +4620,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get nutritionAboutWhat =>
-      'Eine einfache Art, Mahlzeiten, Wasser, Protein und Supplements direkt neben deinen Workouts festzuhalten. SouyzGym ist zuerst eine Gym-App: Ernährung ist da, damit du alles an einem Ort hast, nicht um eine richtige Diät-App zu ersetzen.';
+      'Eine einfache Art, Mahlzeiten, Wasser, Protein und Supplements direkt neben deinen Workouts festzuhalten. SoyouzGym ist zuerst eine Gym-App: Ernährung ist da, damit du alles an einem Ort hast, nicht um eine richtige Diät-App zu ersetzen.';
 
   @override
   String get nutritionAboutScanTitle => 'Kein Scanner, niemals';
@@ -4634,7 +4634,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get nutritionAboutLocal =>
-      'Über 500 Lebensmittel mit Fotos sind in der App enthalten. Du kannst eigene hinzufügen, ihre Fotos ändern und ihre Werte bearbeiten. Alles bleibt auf deinem Handy, wie der Rest von SouyzGym.';
+      'Über 500 Lebensmittel mit Fotos sind in der App enthalten. Du kannst eigene hinzufügen, ihre Fotos ändern und ihre Werte bearbeiten. Alles bleibt auf deinem Handy, wie der Rest von SoyouzGym.';
 
   @override
   String get nutritionAboutBetaTitle => 'Noch in der Beta';
@@ -4700,7 +4700,7 @@ class AppLocalizationsDe extends AppLocalizations {
   }
 
   @override
-  String get notifSuppTap => 'Tick it off in SouyzGym once you\'ve taken it.';
+  String get notifSuppTap => 'Tick it off in SoyouzGym once you\'ve taken it.';
 
   @override
   String get suppNoneToday => 'Nothing to take today.';
@@ -5596,7 +5596,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get ladderHint =>
-      'Ordne die Schritte von leicht nach schwer. Schaffst du zwei Einheiten hintereinander 3 Sätze à 8 (5 bei langsamen), schlägt SouyzGym den nächsten vor.';
+      'Ordne die Schritte von leicht nach schwer. Schaffst du zwei Einheiten hintereinander 3 Sätze à 8 (5 bei langsamen), schlägt SoyouzGym den nächsten vor.';
 
   @override
   String get ladderBuiltIn =>
@@ -6575,13 +6575,13 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get supportThanksBody =>
-      'SouyzGym ist und bleibt kostenlos, ohne Werbung und ohne Haken.\n\nWenn es dir beim Training hilft, macht mir ein Kaffee den Tag ☕\nUnd wenn nicht, kein Problem: ein Stern auf GitHub auch ⭐';
+      'SoyouzGym ist und bleibt kostenlos, ohne Werbung und ohne Haken.\n\nWenn es dir beim Training hilft, macht mir ein Kaffee den Tag ☕\nUnd wenn nicht, kein Problem: ein Stern auf GitHub auch ⭐';
 
   @override
   String get perfSetting => 'Performance';
 
   @override
-  String get perfSheetHint => 'How much of your phone SouyzGym uses. You can change each part below.';
+  String get perfSheetHint => 'How much of your phone SoyouzGym uses. You can change each part below.';
 
   @override
   String get perfLite => 'Saver';
@@ -7127,7 +7127,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get autoProgressHint =>
-      'When you start a workout, SouyzGym fills in the next step for each exercise. With Add reps you add one rep per set up to 12, then the weight goes up and you start again at 8. You can still tune each exercise on its page.';
+      'When you start a workout, SoyouzGym fills in the next step for each exercise. With Add reps you add one rep per set up to 12, then the weight goes up and you start again at 8. You can still tune each exercise on its page.';
 
   @override
   String get noteFolders => 'Folders';
