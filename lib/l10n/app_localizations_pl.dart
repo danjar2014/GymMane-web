@@ -1,0 +1,7463 @@
+// ignore: unused_import
+import 'package:intl/intl.dart' as intl;
+import 'app_localizations.dart';
+
+// ignore_for_file: type=lint
+
+/// The translations for Polish (`pl`).
+class AppLocalizationsPl extends AppLocalizations {
+  AppLocalizationsPl([String locale = 'pl']) : super(locale);
+
+  @override
+  String get languageName => 'Polski';
+
+  @override
+  String vsLastMonthLabel(String pct) {
+    return '$pct% vs poprzedni miesiąc';
+  }
+
+  @override
+  String levelStreakLabel(int level, String streak) {
+    return 'Poziom $level · $streak';
+  }
+
+  @override
+  String get save => 'ZAPISZ';
+
+  @override
+  String get cancel => 'Anuluj';
+
+  @override
+  String get cancelCaps => 'ANULUJ';
+
+  @override
+  String get deleteCaps => 'USUŃ';
+
+  @override
+  String get done => 'GOTOWE';
+
+  @override
+  String get set => 'Ustaw';
+
+  @override
+  String get home => 'START';
+
+  @override
+  String get progress => 'POSTĘP';
+
+  @override
+  String get exercises => 'ĆWICZENIA';
+
+  @override
+  String get settings => 'USTAWIENIA';
+
+  @override
+  String get today => 'DZISIAJ';
+
+  @override
+  String get thisWeek => 'TEN TYDZIEŃ';
+
+  @override
+  String get recommended => 'POLECANE';
+
+  @override
+  String get goal => 'CEL';
+
+  @override
+  String get volume => 'OBJĘTOŚĆ';
+
+  @override
+  String get setsToday => 'SERIE DZISIAJ';
+
+  @override
+  String get prs => 'REKORDY';
+
+  @override
+  String get todaysFocus => 'DZISIEJSZY CEL';
+
+  @override
+  String get todaysRoutine => 'DZISIEJSZY PLAN';
+
+  @override
+  String get startWorkout => 'ROZPOCZNIJ TRENING';
+
+  @override
+  String get routines => 'PLANY';
+
+  @override
+  String get tools => 'NARZĘDZIA';
+
+  @override
+  String get firstSessionHint => 'Wybierz mięśnie i zapisz pierwszy trening';
+
+  @override
+  String exerciseCount(int n) {
+    String _temp0 = intl.Intl.pluralLogic(n, locale: localeName, other: '$n ćwiczeń', one: '$n ćwiczenie');
+    return '$_temp0';
+  }
+
+  @override
+  String get pushDay => 'DZIEŃ PUSH';
+
+  @override
+  String get pullDay => 'DZIEŃ PULL';
+
+  @override
+  String get legDay => 'NOGI';
+
+  @override
+  String get pushFocus => 'Klatka · Barki · Triceps';
+
+  @override
+  String get pullFocus => 'Plecy · Biceps · Kaptury';
+
+  @override
+  String get legFocus => 'Czworogłowe · Dwugłowe uda · Pośladki';
+
+  @override
+  String get train => 'TRENUJ';
+
+  @override
+  String get step1 => 'KROK 1 Z 2';
+
+  @override
+  String get step2 => 'KROK 2 Z 2';
+
+  @override
+  String get chooseFocus => 'WYBIERZ CEL';
+
+  @override
+  String get buildSession => 'UŁÓŻ TRENING';
+
+  @override
+  String get tapMuscles => 'Dotknij mięśni, które chcesz trenować, z przodu i z tyłu.';
+
+  @override
+  String get continueBtn => 'DALEJ';
+
+  @override
+  String get nothingForFocus => 'Brak ćwiczeń dla tego celu';
+
+  @override
+  String get goBackPick => 'Wróć i wybierz mięsień, dla którego masz ćwiczenia w bibliotece.';
+
+  @override
+  String pickedHint(int n) {
+    return 'Ułożyliśmy trening. Dotknij, aby dodać lub usunąć dowolne z $n ćwiczeń.';
+  }
+
+  @override
+  String get pickAnExercise => 'WYBIERZ ĆWICZENIE';
+
+  @override
+  String get searchAllExercises => 'Szukaj ćwiczenia…';
+
+  @override
+  String get noExercisesMatch => 'Brak pasujących ćwiczeń';
+
+  @override
+  String get createItInstead => 'Utwórz własne ćwiczenie';
+
+  @override
+  String startCount(int n) {
+    String _temp0 = intl.Intl.pluralLogic(n, locale: localeName, other: '$n ĆWICZEŃ', one: '$n ĆWICZENIE');
+    return 'START · $_temp0';
+  }
+
+  @override
+  String get inProgress => 'W TOKU';
+
+  @override
+  String get paused => 'WSTRZYMANO';
+
+  @override
+  String get last => 'OSTATNIO';
+
+  @override
+  String get rest => 'ODPOCZYNEK';
+
+  @override
+  String get skip => 'POMIŃ';
+
+  @override
+  String get addSet => '+ DODAJ SERIĘ';
+
+  @override
+  String get finishSession => 'ZAKOŃCZ TRENING';
+
+  @override
+  String get setDone => 'SERIA UKOŃCZONA';
+
+  @override
+  String get nextExercise => 'NASTĘPNE ĆWICZENIE';
+
+  @override
+  String get dropExerciseAction => 'Usuń ćwiczenie';
+
+  @override
+  String get restOff => 'Wył.';
+
+  @override
+  String get miniRest => 'Przerwa w rest-pause i cluster';
+
+  @override
+  String get miniRestHint => 'Przed seriami rest-pause lub cluster';
+
+  @override
+  String get gymPass => 'Karnet na siłownię';
+
+  @override
+  String get gymPassEmpty => 'Trzymaj tu kod swojej siłowni i wchodź bez karty';
+
+  @override
+  String get gymPassAdd => 'Dodaj karnet';
+
+  @override
+  String get gymPassScan => 'Zrób zdjęcie kodu';
+
+  @override
+  String get gymPassScanHint => 'Aparatem telefonu';
+
+  @override
+  String get gymPassPhoto => 'Ze zdjęcia lub zrzutu ekranu';
+
+  @override
+  String get gymPassPhotoHint => 'Na przykład zrzut ekranu z aplikacji twojej siłowni';
+
+  @override
+  String get gymPassType => 'Wpisz numer';
+
+  @override
+  String get gymPassTypeHint => 'Dla kodów kreskowych: numer wydrukowany pod spodem';
+
+  @override
+  String get gymPassNotFound => 'Na tym obrazie nie ma kodu QR. Spróbuj ostrzejszego albo wpisz numer.';
+
+  @override
+  String get gymPassName => 'Nazwa siłowni';
+
+  @override
+  String get gymPassDefaultName => 'Moja siłownia';
+
+  @override
+  String get gymPassCode => 'Kod';
+
+  @override
+  String get gymPassFormat => 'Rodzaj kodu';
+
+  @override
+  String get gymPassInvalid => 'Ten numer nie pasuje do tego rodzaju kodu';
+
+  @override
+  String get gymPassShowHint => 'Przyłóż go do czytnika. Jasność rośnie sama.';
+
+  @override
+  String get gymPassDeleted => 'Karnet usunięty';
+
+  @override
+  String get gymPassEdit => 'Edytuj karnet';
+
+  @override
+  String get gymPassShow => 'Pokaż przy wejściu';
+
+  @override
+  String get gymPassPrivate => 'Zostaje tylko w twoim telefonie. Nic nie jest wysyłane.';
+
+  @override
+  String get gymPassColor => 'Kolor';
+
+  @override
+  String get gymPassRescan => 'Odczytaj kod ponownie';
+
+  @override
+  String get gymPassReading => 'Odczytywanie kodu…';
+
+  @override
+  String get gymPassSettingHint => 'Karta siłowni w profilu';
+
+  @override
+  String get gymPassMember => 'Członek';
+
+  @override
+  String get widgetHintActivity => 'Twoja mapa dni treningowych';
+
+  @override
+  String get widgetHintStats => 'Seria, objętość i sesje z tego tygodnia';
+
+  @override
+  String get widgetHintBody => 'Mięśnie, które trenowałeś';
+
+  @override
+  String get widgetHintToday => 'W skrócie: trenowałeś dziś?';
+
+  @override
+  String get widgetHintWeek => 'Plan tygodnia dzień po dniu';
+
+  @override
+  String get supportHintBug => 'Napisz mi na GitHubie, co się zepsuło';
+
+  @override
+  String get supportHintFeature => 'Zaproponuj pomysł na aplikację';
+
+  @override
+  String get supportHintStar => 'Pomaga, by więcej osób ją znalazło';
+
+  @override
+  String get supportHintCoffee => 'Wspiera rozwój. Za darmo i bez reklam';
+
+  @override
+  String get bodyweightNoteHint => 'Dodaj notatkę: jak się czujesz, co testujesz… (opcjonalnie)';
+
+  @override
+  String exerciseUnitSwitch(String unit) {
+    return 'Używaj $unit w tym ćwiczeniu';
+  }
+
+  @override
+  String get setCol => '#';
+
+  @override
+  String get repsCol => 'POWTÓRZENIA';
+
+  @override
+  String weightCol(String unit) {
+    return 'CIĘŻAR ($unit)';
+  }
+
+  @override
+  String get repsTitle => 'POWTÓRZENIA';
+
+  @override
+  String weightTitle(String unit) {
+    return 'CIĘŻAR ($unit)';
+  }
+
+  @override
+  String get sessionComplete => 'TRENING ZAPISANY';
+
+  @override
+  String get finishHeadlinePr => 'Nowy rekord życiowy';
+
+  @override
+  String get finishHeadlineGoal => 'Cel tygodniowy osiągnięty';
+
+  @override
+  String get finishHeadlineStreak => 'Seria utrzymana';
+
+  @override
+  String get finishHeadlineDefault => 'Kolejny trening za tobą';
+
+  @override
+  String finishBodyPr(int prs) {
+    String _temp0 = intl.Intl.pluralLogic(
+      prs,
+      locale: localeName,
+      other: '$prs ćwiczeniach',
+      one: 'jednym ćwiczeniu',
+    );
+    return 'Podniosłeś więcej niż kiedykolwiek w $_temp0. Wynik został zapisany.';
+  }
+
+  @override
+  String get finishBodyGoal => 'Udało ci się wykonać zaplanowaną liczbę treningów w tym tygodniu.';
+
+  @override
+  String finishBodyStreak(int streak) {
+    return '$streak dni z rzędu. Najtrudniejsze jest nie przestawać.';
+  }
+
+  @override
+  String get finishBodyDefault => 'Zapisane i policzone. To regularność napędza postęp.';
+
+  @override
+  String get vsLastTime => 'VS POPRZEDNIO';
+
+  @override
+  String get firstTime => 'Pierwszy zapis';
+
+  @override
+  String prCount(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n nowe rekordy',
+      one: '$n nowy rekord',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get duration => 'CZAS';
+
+  @override
+  String get setsCaps => 'SERIE';
+
+  @override
+  String exerciseXofY(int i, int n) {
+    return 'ĆWICZENIE $i Z $n';
+  }
+
+  @override
+  String get decrease => 'Zmniejsz';
+
+  @override
+  String get increase => 'Zwiększ';
+
+  @override
+  String markSet(int n) {
+    return 'Oznacz serię $n jako ukończoną';
+  }
+
+  @override
+  String get pauseWorkout => 'Wstrzymaj trening';
+
+  @override
+  String get resumeWorkout => 'Wznów trening';
+
+  @override
+  String get discardTitle => 'Odrzucić trening?';
+
+  @override
+  String get discardBody => 'Serie z tego treningu zostaną utracone.';
+
+  @override
+  String get keepTraining => 'Trenuj dalej';
+
+  @override
+  String get discard => 'Odrzuć';
+
+  @override
+  String get notifRestChannel => 'Minutnik odpoczynku';
+
+  @override
+  String get notifRestChannelWhy => 'Powiadamia, gdy przerwa między seriami się skończy';
+
+  @override
+  String get notifAlertChannel => 'Minutnik odpoczynku (alert)';
+
+  @override
+  String get notifAlertChannelWhy => 'Wyświetla baner od razu po zakończeniu przerwy';
+
+  @override
+  String get restOverTitle => 'Koniec odpoczynku';
+
+  @override
+  String get restOverBody => 'Wracamy, następna seria czeka.';
+
+  @override
+  String get allTimeSessions => 'TRENINGI';
+
+  @override
+  String get allTimeTime => 'CZAS';
+
+  @override
+  String get allTimeSets => 'SERIE';
+
+  @override
+  String get consistency => 'REGULARNOŚĆ';
+
+  @override
+  String sessionsLogged(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n zapisanych treningów',
+      one: '$n zapisany trening',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String streakDays(int n) {
+    return 'Seria $n dni';
+  }
+
+  @override
+  String get bodyweight => 'MASA CIAŁA';
+
+  @override
+  String get logBodyweight => 'ZAPISZ MASĘ';
+
+  @override
+  String get trackWeight => 'Śledź swoją masę w czasie';
+
+  @override
+  String get muscleMap => 'MAPA MIĘŚNI';
+
+  @override
+  String get days7 => '7 D';
+
+  @override
+  String get days30 => '30 D';
+
+  @override
+  String get days90 => '90 D';
+
+  @override
+  String get days365 => '1 R';
+
+  @override
+  String get daysAll => 'Wszystko';
+
+  @override
+  String get weeklyAvgTitle => 'Średnia tygodniowa';
+
+  @override
+  String weekOfDate(String date) {
+    return 'Tydzień od $date';
+  }
+
+  @override
+  String weightChangeRange(String change) {
+    return '$change w tym okresie';
+  }
+
+  @override
+  String get heatLow => 'Nietrenowane';
+
+  @override
+  String get heatHigh => 'Maksymalna objętość';
+
+  @override
+  String get muscleMapEmpty => 'Zapisz trening, a twoje ciało zacznie się tutaj podświetlać.';
+
+  @override
+  String get muscleMapHint => 'Dotknij mięśnia, aby zobaczyć, ile pracował.';
+
+  @override
+  String muscleMapBehind(String names) {
+    return 'W tyle: $names';
+  }
+
+  @override
+  String ofTarget(int pct) {
+    return '$pct% celu';
+  }
+
+  @override
+  String get muscleSplit => 'PODZIAŁ MIĘŚNI';
+
+  @override
+  String get personalRecords => 'REKORDY OSOBISTE';
+
+  @override
+  String get strength1rm => 'SIŁA · SZAC. 1RM';
+
+  @override
+  String get strengthEmpty => 'Zapisz ćwiczenie dwa razy, a pojawi się tutaj jego krzywa siły.';
+
+  @override
+  String oneRmEst(String w) {
+    return 'Szac. 1RM: $w';
+  }
+
+  @override
+  String get restDayShort => 'Dzień odpoczynku';
+
+  @override
+  String get restDay => 'Dzień odpoczynku, nic nie zapisano.';
+
+  @override
+  String get delete => 'Usuń';
+
+  @override
+  String get deleteEntry => 'Usunąć ten wpis?';
+
+  @override
+  String deleteEntryBody(String name) {
+    return '„$name” zostanie usunięte z tego dnia oraz z rekordów i wykresów.';
+  }
+
+  @override
+  String get bodyweightHistory => 'HISTORIA';
+
+  @override
+  String get exercisesCaps => 'ĆWICZENIA';
+
+  @override
+  String get timeCaps => 'CZAS';
+
+  @override
+  String libraryCount(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n ćwiczeń w bibliotece',
+      one: '$n ćwiczenie w bibliotece',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get searchExercises => 'Szukaj ćwiczeń';
+
+  @override
+  String get muscleFilter => 'MIĘSIEŃ';
+
+  @override
+  String get levelFilter => 'POZIOM';
+
+  @override
+  String get kindLabel => 'RODZAJ';
+
+  @override
+  String get kindStrength => 'Siła';
+
+  @override
+  String get kindCalisthenics => 'Kalistenika';
+
+  @override
+  String get kindCardio => 'Cardio';
+
+  @override
+  String get kindStretch => 'Rozciąganie';
+
+  @override
+  String get newExercise => 'NOWE ĆWICZENIE';
+
+  @override
+  String get exerciseName => 'Nazwa ćwiczenia';
+
+  @override
+  String get equipmentLabel => 'SPRZĘT';
+
+  @override
+  String get addExercise => 'DODAJ ĆWICZENIE';
+
+  @override
+  String get advanced => 'ZAAWANSOWANE';
+
+  @override
+  String get demoMedia => 'DEMO';
+
+  @override
+  String get addMedia => 'Dodaj multimedia';
+
+  @override
+  String get mediaHint => 'Obraz, GIF lub wideo';
+
+  @override
+  String get changeMedia => 'Zmień';
+
+  @override
+  String get videoSelected => 'Wybrano wideo';
+
+  @override
+  String get favouritesOnly => 'Ulubione';
+
+  @override
+  String get noFavouritesYet => 'Brak ulubionych';
+
+  @override
+  String get noFavouritesHint => 'Dotknij gwiazdki przy ćwiczeniu, aby zachować je tutaj.';
+
+  @override
+  String get clearFilters => 'Wyczyść filtry';
+
+  @override
+  String get quickAddAmount => 'How much you had';
+
+  @override
+  String get homeCardsTitle => 'Karty na ekranie głównym';
+
+  @override
+  String get homeCardsHint => 'To, co włączysz, pojawi się na ekranie głównym';
+
+  @override
+  String get homeCardFocus => 'Dziś';
+
+  @override
+  String get homeCardSteps => 'Kroki';
+
+  @override
+  String get homeCardWeek => 'Ten tydzień';
+
+  @override
+  String get homeCardRoutines => 'Plany';
+
+  @override
+  String get homeCardRecommended => 'Polecane';
+
+  @override
+  String get textSizeSetting => 'Rozmiar tekstu';
+
+  @override
+  String get textSizeSmall => 'Mały';
+
+  @override
+  String get textSizeNormal => 'Normalny';
+
+  @override
+  String get textSizeLarge => 'Duży';
+
+  @override
+  String get textSizeHint => 'Ponad rozmiar tekstu w telefonie';
+
+  @override
+  String get calmMotionSetting => 'Mniej animacji';
+
+  @override
+  String get calmMotionHint => 'Ekrany pojawiają się bez wsuwania';
+
+  @override
+  String get dishArchive => 'Archive';
+
+  @override
+  String get dishUnarchive => 'Restore';
+
+  @override
+  String get dishArchivedToast => 'Dish archived';
+
+  @override
+  String get filterShowLabel => 'Pokaż';
+
+  @override
+  String get noExercisesFound => 'Nie znaleziono ćwiczeń';
+
+  @override
+  String get noExercisesHint => 'Spróbuj innego wyszukiwania lub wyczyść filtry.';
+
+  @override
+  String get personalRecord => 'REKORD OSOBISTY';
+
+  @override
+  String get history => 'HISTORIA';
+
+  @override
+  String get noHistory => 'Nie zapisano jeszcze treningów. Wykonuj to ćwiczenie, aby zbudować historię.';
+
+  @override
+  String get notes => 'NOTATKI';
+
+  @override
+  String get notePlaceholder => 'Wskazówki, ustawienie, odczucia…';
+
+  @override
+  String notHere(String gear, String place) {
+    return 'Brak $gear w $place';
+  }
+
+  @override
+  String get notHereWhy => 'Zamień na coś, czego możesz dziś faktycznie użyć.';
+
+  @override
+  String get altHere => 'CO MOŻESZ TU ZROBIĆ';
+
+  @override
+  String get places => 'MOJE MIEJSCA';
+
+  @override
+  String get placesHint =>
+      'Podaj sprzęt dostępny w każdym miejscu, a biblioteka pokaże tylko to, co możesz tam wykonać.';
+
+  @override
+  String get placeAll => 'Wszędzie';
+
+  @override
+  String get placeNew => 'Nowe miejsce';
+
+  @override
+  String get placeNamePlaceholder => 'Dom, siłownia, park…';
+
+  @override
+  String get placeGearLabel => 'DOSTĘPNY SPRZĘT';
+
+  @override
+  String placeExercises(int n) {
+    return '$n ćwiczeń tutaj';
+  }
+
+  @override
+  String get placeEmptyTitle => 'Trenuj, gdziekolwiek jesteś';
+
+  @override
+  String get placeEmptyBody =>
+      'Miejsce to lista sprzętu, który masz w danej lokalizacji. Wybierz jedno na początek i edytuj później.';
+
+  @override
+  String get placeDeleteTitle => 'Usuń miejsce';
+
+  @override
+  String get placeDeleteBody => 'Usunięte zostanie tylko miejsce. Ćwiczenia i treningi zostaną.';
+
+  @override
+  String get placeGym => 'Siłownia';
+
+  @override
+  String get placeHome => 'Dom';
+
+  @override
+  String get placeOutdoors => 'Na zewnątrz';
+
+  @override
+  String get placeFilterLabel => 'MIEJSCE';
+
+  @override
+  String get noGearOnly => 'Bez sprzętu';
+
+  @override
+  String placeActive(String name) {
+    return 'Trening w $name';
+  }
+
+  @override
+  String get journal => 'DZIENNIK';
+
+  @override
+  String noteCount(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n notatek',
+      one: '1 notatka',
+      zero: 'Brak notatek',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get noteKindNote => 'Notatka';
+
+  @override
+  String get noteKindPlan => 'Plan';
+
+  @override
+  String get noteKindDone => 'Sukces';
+
+  @override
+  String get noteKindPain => 'Dolegliwość';
+
+  @override
+  String get noteFilterAll => 'Wszystkie';
+
+  @override
+  String get newNote => 'Nowa notatka';
+
+  @override
+  String get editNote => 'Edytuj notatkę';
+
+  @override
+  String get addNote => 'DODAJ NOTATKĘ';
+
+  @override
+  String get noteEmptyTitle => 'Jeszcze nic nie zapisano';
+
+  @override
+  String get noteEmptyBody =>
+      'Wskazówki, plany na następny raz, odczucia po treningu. Opcjonalnie ze zdjęciami lub filmem.';
+
+  @override
+  String get noteNoneForExercise => 'Brak notatek do tego ćwiczenia.';
+
+  @override
+  String get noteKindLabel => 'TYP';
+
+  @override
+  String get noteTextLabel => 'NOTATKA';
+
+  @override
+  String get noteDateLabel => 'DATA';
+
+  @override
+  String get noteExerciseLabel => 'ĆWICZENIE';
+
+  @override
+  String get noteMediaLabel => 'ZDJĘCIA I WIDEO';
+
+  @override
+  String get noteGeneral => 'Brak ćwiczenia';
+
+  @override
+  String get noteAttach => 'Dołącz';
+
+  @override
+  String get noteRemoveMedia => 'Usuń załącznik';
+
+  @override
+  String get deleteNoteTitle => 'Usuń notatkę';
+
+  @override
+  String get deleteNoteBody => 'Notatka i wszystkie załączniki zostaną trwale usunięte.';
+
+  @override
+  String get noteToday => 'Dzisiaj';
+
+  @override
+  String get noteYesterday => 'Wczoraj';
+
+  @override
+  String get noteAllNotes => 'Wszystkie notatki';
+
+  @override
+  String get noteCalendar => 'Kalendarz';
+
+  @override
+  String get noteNoneOnDay => 'Nic nie zapisano tego dnia';
+
+  @override
+  String get noteAddOnDay => 'Dodaj notatkę na ten dzień';
+
+  @override
+  String get notePrevMonth => 'Poprzedni miesiąc';
+
+  @override
+  String get noteNextMonth => 'Następny miesiąc';
+
+  @override
+  String noteMonthCount(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n notatek w tym miesiącu',
+      one: '1 notatka w tym miesiącu',
+      zero: 'Brak notatek w tym miesiącu',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get measures => 'POMIARY';
+
+  @override
+  String get measuresHint => 'Od szyi po łydkę: obserwuj zmiany ciała, nie tylko ciężar na sztandze.';
+
+  @override
+  String measureCount(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n pomiarów',
+      one: '1 pomiar',
+      zero: 'Brak pomiarów',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get measureNoneYet => 'Jeszcze nie zmierzono';
+
+  @override
+  String get measureHistory => 'HISTORIA';
+
+  @override
+  String get measureNeck => 'Szyja';
+
+  @override
+  String get measureShoulders => 'Barki';
+
+  @override
+  String get measureChest => 'Klatka';
+
+  @override
+  String get measureArm => 'Ramię';
+
+  @override
+  String get measureForearm => 'Przedramię';
+
+  @override
+  String get measureWaist => 'Talia';
+
+  @override
+  String get measureHips => 'Biodra';
+
+  @override
+  String get measureThigh => 'Udo';
+
+  @override
+  String get measureCalf => 'Łydka';
+
+  @override
+  String get measureBodyfat => 'Tkanka tłuszczowa';
+
+  @override
+  String get timeline => 'OŚ CZASU';
+
+  @override
+  String get hidePhotos => 'Ukryj zdjęcia';
+
+  @override
+  String get showPhotos => 'Pokaż zdjęcia';
+
+  @override
+  String get timelineHint => 'Ta sama poza, to samo miejsce, to samo światło. Za rok nie uwierzysz.';
+
+  @override
+  String get timelineEmptyTitle => 'Pierwsze zdjęcie rozpoczyna śledzenie';
+
+  @override
+  String photoCount(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n zdjęć',
+      one: '1 zdjęcie',
+      zero: 'Brak zdjęć',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get poseFront => 'Przód';
+
+  @override
+  String get poseSide => 'Bok';
+
+  @override
+  String get poseBack => 'Tył';
+
+  @override
+  String get photoEvery => 'PRZYPOMNIJ';
+
+  @override
+  String photoEveryDays(int n) {
+    return 'Co $n dni';
+  }
+
+  @override
+  String get photoEveryOff => 'Nigdy';
+
+  @override
+  String get timelineEvery => 'GRUPUJ CO';
+
+  @override
+  String get custom => 'Niestandardowo';
+
+  @override
+  String photoNextIn(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: 'Następne zdjęcie za $n dni',
+      one: 'Następne zdjęcie jutro',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get photoDueNow => 'Czas na zdjęcie: zrób je dziś';
+
+  @override
+  String get addTodayPhotos => 'DODAJ DZISIEJSZE ZDJĘCIA';
+
+  @override
+  String posePhoto(String pose) {
+    return 'Zdjęcie: $pose';
+  }
+
+  @override
+  String get compare => 'PORÓWNAJ';
+
+  @override
+  String get compareNeedTwo => 'Zrób tę samą pozę w dwa różne dni, aby porównać je tutaj.';
+
+  @override
+  String dayNumber(int n) {
+    return 'Dzień $n';
+  }
+
+  @override
+  String daysApart(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n dni różnicy',
+      one: '1 dzień różnicy',
+      zero: 'Ten sam dzień',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get deleteEntryTitle => 'Usuń ten dzień';
+
+  @override
+  String get deleteDayBody => 'Zdjęcia z tego dnia zostaną również trwale usunięte.';
+
+  @override
+  String get timelinePhotos => 'Zdjęcia';
+
+  @override
+  String get timelineBody => 'Mapa mięśni';
+
+  @override
+  String get timelineBodyEmpty => 'Zapisz trening, a mapa mięśni zacznie się tutaj wypełniać, bez zdjęć.';
+
+  @override
+  String get timelineBodyHint => 'Tworzone z twoich serii, nic nie jest wysyłane.';
+
+  @override
+  String timelineWindow(String from, String to) {
+    return '$from – $to';
+  }
+
+  @override
+  String sessionCount(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n treningów',
+      one: '1 trening',
+      zero: 'Brak treningów',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get notifPhotoChannel => 'Zdjęcia postępów';
+
+  @override
+  String get notifPhotoChannelWhy => 'Przypomnienie, gdy nadejdzie czas na kolejne zdjęcie postępów.';
+
+  @override
+  String get notifPhotoTitle => 'Czas na zdjęcie postępów';
+
+  @override
+  String notifPhotoBody(int n) {
+    return '$n dni od poprzedniego. Ta sama poza, to samo światło.';
+  }
+
+  @override
+  String get share => 'UDOSTĘPNIJ';
+
+  @override
+  String get sharePick => 'Co chcesz pokazać?';
+
+  @override
+  String get shareStreak => 'Seria i regularność';
+
+  @override
+  String get shareBody => 'Trenowane mięśnie';
+
+  @override
+  String get shareCompare => 'Przed / po';
+
+  @override
+  String get shareHint =>
+      'Karta powstaje na telefonie. Nic go nie opuszcza, dopóki nie wybierzesz, gdzie ją wysłać.';
+
+  @override
+  String get shareFailed => 'Nie udało się utworzyć karty';
+
+  @override
+  String get shareWeekOf => 'OSTATNIE 7 DNI';
+
+  @override
+  String get shareStreakLabel => 'DNI Z RZĘDU';
+
+  @override
+  String get shareSessionsLabel => 'TRENINGI';
+
+  @override
+  String get shareVolumeLabel => 'OBJĘTOŚĆ';
+
+  @override
+  String get restForExercise => 'ODPOCZYNEK DLA TEGO ĆWICZENIA';
+
+  @override
+  String get restUsingDefault => 'Używa domyślnego czasu';
+
+  @override
+  String get restCustom => 'Tylko dla tego';
+
+  @override
+  String get setType => 'TYP SERII';
+
+  @override
+  String get setTypeNormal => 'Robocza';
+
+  @override
+  String get setTypeWarmup => 'Rozgrzewka';
+
+  @override
+  String get setTypeDrop => 'Drop set';
+
+  @override
+  String get setTypeFailure => 'Do upadku';
+
+  @override
+  String get addWarmup => 'ROZGRZEWKA';
+
+  @override
+  String platesPerSide(String plates) {
+    return 'Na stronę: $plates';
+  }
+
+  @override
+  String get howTo => 'JAK WYKONAĆ';
+
+  @override
+  String get similar => 'PODOBNE';
+
+  @override
+  String get primaryLabel => 'GŁÓWNY';
+
+  @override
+  String get secondaryLabel => 'DRUGORZĘDNY';
+
+  @override
+  String get none => 'Brak';
+
+  @override
+  String setCount(int n) {
+    String _temp0 = intl.Intl.pluralLogic(n, locale: localeName, other: '$n serii', one: '$n seria');
+    return '$_temp0';
+  }
+
+  @override
+  String volumeSuffix(String v) {
+    return 'objętość $v';
+  }
+
+  @override
+  String get weeklyPlan => 'PLAN TYGODNIOWY';
+
+  @override
+  String get yourRoutines => 'TWOJE PLANY';
+
+  @override
+  String get noRoutines => 'Brak planów. Utwórz jeden i dodaj ćwiczenia.';
+
+  @override
+  String get newRoutine => 'NOWY PLAN';
+
+  @override
+  String get routineName => 'Nazwa planu';
+
+  @override
+  String get schedule => 'HARMONOGRAM';
+
+  @override
+  String get addFromList => 'Dodaj ćwiczenia z poniższej listy.';
+
+  @override
+  String get addExercises => 'Dodaj ćwiczenia';
+
+  @override
+  String get deleteRoutine => 'Usunąć ten plan?';
+
+  @override
+  String exercisesWithCount(int n) {
+    return 'ĆWICZENIA · $n';
+  }
+
+  @override
+  String setDay(String day) {
+    return 'USTAW $day';
+  }
+
+  @override
+  String get newRoutineName => 'Nowy plan';
+
+  @override
+  String get dragToReorder =>
+      'Przeciągnij uchwyt z kropkami, aby zmienić kolejność, w tej kolejności trenujesz.';
+
+  @override
+  String reorderHandle(String name) {
+    return 'Zmień kolejność: $name';
+  }
+
+  @override
+  String get removeFromRoutine => 'Usuń z planu';
+
+  @override
+  String get dropExercise => 'Usunąć to ćwiczenie?';
+
+  @override
+  String dropExerciseBody(String name) {
+    return '„$name” zostanie usunięte z treningu. Zapisane dane nie zostaną utracone.';
+  }
+
+  @override
+  String get drop => 'Usuń';
+
+  @override
+  String get resetData => 'Usuń wszystkie moje dane';
+
+  @override
+  String get resetTitle => 'Usunąć wszystko?';
+
+  @override
+  String get resetBody =>
+      'Treningi, rekordy, plany, notatki i profil. Tego nie można cofnąć: najpierw wyeksportuj kopię zapasową, jeśli możesz ich potrzebować.';
+
+  @override
+  String get resetConfirm => 'Usuń wszystko';
+
+  @override
+  String get resetDone => 'Wszystkie dane usunięte';
+
+  @override
+  String get support => 'POMOC';
+
+  @override
+  String get reportBug => 'Zgłoś błąd';
+
+  @override
+  String get requestFeature => 'Zaproponuj funkcję';
+
+  @override
+  String get starOnGithub => 'Dodaj gwiazdkę na GitHubie';
+
+  @override
+  String get buyCoffee => 'Postaw mi kawę';
+
+  @override
+  String get cantOpenLink => 'Nie udało się otworzyć linku';
+
+  @override
+  String get theme => 'Motyw';
+
+  @override
+  String get darkTheme => 'Ciemny';
+
+  @override
+  String get lightTheme => 'Jasny';
+
+  @override
+  String get amoledTheme => 'Czerń AMOLED';
+
+  @override
+  String get editDuration => 'Czas treningu';
+
+  @override
+  String get sessionName => 'Nazwa treningu';
+
+  @override
+  String get nameWorkout => 'Nazwij';
+
+  @override
+  String get sessionNameHint => 'np. Nogi, Push, Całe ciało';
+
+  @override
+  String get secondaryPickHint => 'Stuknij inne mięśnie, które pracują w tym ćwiczeniu.';
+
+  @override
+  String get languageLabel => 'Język';
+
+  @override
+  String get unitsLabel => 'Jednostki';
+
+  @override
+  String get restTimer => 'Minutnik odpoczynku';
+
+  @override
+  String get alarmBlockedTitle => 'Powiadomienia są wyłączone';
+
+  @override
+  String get alarmBlockedBody => 'Alarm odpoczynku nie zabrzmi przy zablokowanym ekranie';
+
+  @override
+  String get alarmBlockedAction => 'WŁĄCZ';
+
+  @override
+  String get alarmSound => 'Dźwięk alarmu';
+
+  @override
+  String get alarmDefaultName => 'Domyślny';
+
+  @override
+  String get alarmSoundHint => 'Użyj własnego dźwięku, maksymalnie 15 sekund';
+
+  @override
+  String get alarmChoose => 'Wybierz dźwięk…';
+
+  @override
+  String get alarmPreview => 'Odtwórz bieżący dźwięk';
+
+  @override
+  String get alarmReset => 'Przywróć domyślny dźwięk';
+
+  @override
+  String get alarmTooLong => 'Ten dźwięk trwa dłużej niż 15 sekund';
+
+  @override
+  String get alarmInvalid => 'Nie udało się odczytać pliku audio';
+
+  @override
+  String alarmChanged(String name) {
+    return 'Ustawiono dźwięk alarmu na „$name”';
+  }
+
+  @override
+  String get alarmChangedDefault => 'Przywrócono domyślny dźwięk';
+
+  @override
+  String get addActivityWidget => 'Dodaj widżet aktywności';
+
+  @override
+  String get addStatsWidget => 'Dodaj widżet statystyk';
+
+  @override
+  String get pinUnsupported => 'Dodaj go z menu widżetów programu uruchamiającego';
+
+  @override
+  String get background => 'Tło';
+
+  @override
+  String get bgNone => 'Brak';
+
+  @override
+  String get bgDots => 'Kropki';
+
+  @override
+  String get bgGrid => 'Siatka';
+
+  @override
+  String get exportCsv => 'Eksportuj treningi (CSV)';
+
+  @override
+  String get exportBackup => 'Eksportuj kopię zapasową (ZIP)';
+
+  @override
+  String get importBackup => 'Importuj kopię zapasową';
+
+  @override
+  String get importHint =>
+      'Wybierz kopię .zip (lub starszy .json) wyeksportowaną z GymMane. Zastąpi ona bieżące dane, w tym multimedia.';
+
+  @override
+  String get import => 'Importuj';
+
+  @override
+  String get chooseFile => 'Wybierz plik';
+
+  @override
+  String get importFromApp => 'Importuj z innej aplikacji';
+
+  @override
+  String get importUnknownFormat => 'Plik musi zawierać kolumny: data, ćwiczenie, powtórzenia i ciężar';
+
+  @override
+  String get importZipNoWeights => 'Ten plik ZIP nie zawiera pliku z wagą';
+
+  @override
+  String importWeights(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n pomiarów masy zaimportowano',
+      one: '$n pomiar masy zaimportowany',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get importReadFailed => 'Nie udało się odczytać pliku';
+
+  @override
+  String get importUnitTitle => 'Jakiej jednostki używa ten plik?';
+
+  @override
+  String get importUnitBody => 'Ten eksport nie podaje jednostki wagi.';
+
+  @override
+  String get importNothing => 'Brak nowych danych do importu';
+
+  @override
+  String importDone(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n treningów zaimportowano',
+      one: '$n trening zaimportowany',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get aboutGymmane => 'O GymMane';
+
+  @override
+  String get yourProfile => 'TWÓJ PROFIL';
+
+  @override
+  String get autofills => 'Automatycznie uzupełnia kalkulatory';
+
+  @override
+  String get onbUnitsWhy =>
+      'Do ciężarów, wymiarów i dystansów. Możesz to zmienić w każdej chwili w Ustawieniach.';
+
+  @override
+  String get nameLabel => 'IMIĘ';
+
+  @override
+  String get sexLabel => 'PŁEĆ';
+
+  @override
+  String get macroProtein => 'BIAŁKO';
+
+  @override
+  String get macroCarbs => 'WĘGLOWODANY';
+
+  @override
+  String get macroFat => 'TŁUSZCZ';
+
+  @override
+  String get male => 'Mężczyzna';
+
+  @override
+  String get female => 'Kobieta';
+
+  @override
+  String get ageLabel => 'WIEK';
+
+  @override
+  String get heightLabel => 'WZROST';
+
+  @override
+  String get weightLabel => 'WAGA';
+
+  @override
+  String get weeklyGoal => 'CEL TYGODNIOWY';
+
+  @override
+  String get activityLabel => 'AKTYWNOŚĆ';
+
+  @override
+  String get addPhoto => 'Dodaj zdjęcie';
+
+  @override
+  String get removePhoto => 'Usuń zdjęcie';
+
+  @override
+  String get takePhoto => 'Zrób zdjęcie';
+
+  @override
+  String get chooseGallery => 'Wybierz z galerii';
+
+  @override
+  String get backupImported => 'Kopia zapasowa zaimportowana';
+
+  @override
+  String get backupFailed => 'Nie udało się odczytać kopii zapasowej';
+
+  @override
+  String get nothingToExport => 'Nie ma jeszcze czego eksportować: najpierw zapisz trening';
+
+  @override
+  String calculatorsCount(int n) {
+    return '$n kalkulatorów do treningu';
+  }
+
+  @override
+  String get result => 'WYNIK';
+
+  @override
+  String get weightLifted => 'PODNIESIONY CIĘŻAR';
+
+  @override
+  String get repsPerformed => 'WYKONANE POWTÓRZENIA';
+
+  @override
+  String get neck => 'SZYJA';
+
+  @override
+  String get waist => 'TALIA';
+
+  @override
+  String get hip => 'BIODRA (kobiety)';
+
+  @override
+  String get targetWeight => 'WAGA DOCELOWA';
+
+  @override
+  String get workingWeight => 'CIĘŻAR ROBOCZY';
+
+  @override
+  String get activityLevel => 'POZIOM AKTYWNOŚCI';
+
+  @override
+  String get barWeight => 'WAGA GRYFU';
+
+  @override
+  String get perSide => 'NA STRONĘ';
+
+  @override
+  String get justTheBar => 'Tylko gryf.';
+
+  @override
+  String perSideCount(int n) {
+    return '× $n na stronę';
+  }
+
+  @override
+  String get toolNameRm => '1RM';
+
+  @override
+  String get toolNameBmi => 'BMI';
+
+  @override
+  String get toolNameCal => 'Kalorie';
+
+  @override
+  String get toolNameBf => 'Tkanka tłuszczowa';
+
+  @override
+  String get toolNamePlate => 'Talerze';
+
+  @override
+  String get toolNameWarmup => 'Rozgrzewka';
+
+  @override
+  String get toolTitleRm => 'Kalkulator 1RM';
+
+  @override
+  String get toolTitleBmi => 'Kalkulator BMI';
+
+  @override
+  String get toolTitleCal => 'Kalorie i makro';
+
+  @override
+  String get toolTitleBf => '% tkanki tłuszczowej';
+
+  @override
+  String get toolTitlePlate => 'Kalkulator talerzy';
+
+  @override
+  String get toolTitleWarmup => 'Serie rozgrzewkowe';
+
+  @override
+  String get toolHintRm => 'Szacowane maksimum na 1 powtórzenie (wzór Epleya)';
+
+  @override
+  String get toolHintCal => 'Szacowane dzienne zapotrzebowanie na utrzymanie';
+
+  @override
+  String get toolHintBf => 'Szacunek metodą US Navy';
+
+  @override
+  String get toolHintPlate => 'Łączny ciężar sztangi';
+
+  @override
+  String get toolHintWarmup => 'Docelowy ciężar roboczy';
+
+  @override
+  String get toolDescRm => 'Szacowane maksimum na jedno powtórzenie';
+
+  @override
+  String get toolDescBmi => 'Wskaźnik masy ciała';
+
+  @override
+  String get toolDescCal => 'Kalorie i makroskładniki';
+
+  @override
+  String get toolDescBf => 'Procent tkanki tłuszczowej';
+
+  @override
+  String get toolDescPlate => 'Kalkulator talerzy';
+
+  @override
+  String get toolDescWarmup => 'Serie narastające rozgrzewki';
+
+  @override
+  String get bmiUnderweight => 'Niedowaga';
+
+  @override
+  String get bmiNormal => 'Prawidłowa masa';
+
+  @override
+  String get bmiOverweight => 'Nadwaga';
+
+  @override
+  String get bmiObese => 'Otyłość';
+
+  @override
+  String get actSedentary => 'Siedzący';
+
+  @override
+  String get actLight => 'Lekki';
+
+  @override
+  String get actActive => 'Aktywny';
+
+  @override
+  String get actModerate => 'Umiarkowany';
+
+  @override
+  String get muscleChest => 'Klatka piersiowa';
+
+  @override
+  String get muscleBack => 'Plecy';
+
+  @override
+  String get muscleLowerBack => 'Dolny odcinek pleców';
+
+  @override
+  String get muscleShoulders => 'Barki';
+
+  @override
+  String get muscleBiceps => 'Biceps';
+
+  @override
+  String get muscleTriceps => 'Triceps';
+
+  @override
+  String get muscleForearm => 'Przedramię';
+
+  @override
+  String get muscleTrapezius => 'Kaptury';
+
+  @override
+  String get muscleAbdomen => 'Brzuch';
+
+  @override
+  String get muscleObliques => 'Mięśnie skośne';
+
+  @override
+  String get muscleQuads => 'Czworogłowe';
+
+  @override
+  String get muscleHamstrings => 'Dwugłowe uda';
+
+  @override
+  String get muscleGlutes => 'Pośladki';
+
+  @override
+  String get muscleCalves => 'Łydki';
+
+  @override
+  String get mgChest => 'Klatka';
+
+  @override
+  String get mgBack => 'Plecy';
+
+  @override
+  String get mgLegs => 'Nogi';
+
+  @override
+  String get mgShoulders => 'Barki';
+
+  @override
+  String get mgArms => 'Ramiona';
+
+  @override
+  String get mgCore => 'Core';
+
+  @override
+  String get equipBarbell => 'Sztanga';
+
+  @override
+  String get equipDumbbell => 'Hantla';
+
+  @override
+  String get equipCable => 'Wyciąg';
+
+  @override
+  String get equipMachine => 'Maszyna';
+
+  @override
+  String get equipBodyweight => 'Masa ciała';
+
+  @override
+  String get equipWeighted => 'Z obciążeniem';
+
+  @override
+  String get equipBand => 'Guma';
+
+  @override
+  String get equipKettlebell => 'Kettlebell';
+
+  @override
+  String get equipRings => 'Kółka';
+
+  @override
+  String get equipOther => 'Inne';
+
+  @override
+  String get diffBeginner => 'Początkujący';
+
+  @override
+  String get diffAdvanced => 'Zaawansowany';
+
+  @override
+  String get diffIntermediate => 'Średniozaawansowany';
+
+  @override
+  String get about => 'O APLIKACJI';
+
+  @override
+  String version(String v) {
+    return 'Wersja $v';
+  }
+
+  @override
+  String get aboutBlurb => 'Stworzone przez ćwiczących dla ćwiczących.';
+
+  @override
+  String get freeForever => 'Darmowe na zawsze';
+
+  @override
+  String get freeForeverWhy => 'Bez subskrypcji, bez reklam, bez płatnych blokad.';
+
+  @override
+  String get fullyOffline => '100% offline';
+
+  @override
+  String get fullyOfflineWhy => 'Bez konta, bez serwera. Twoje treningi nigdy nie opuszczają telefonu.';
+
+  @override
+  String get yoursToTake => 'Twoje dane należą do ciebie';
+
+  @override
+  String get yoursToTakeWhy => 'Eksportuj do CSV kiedy chcesz i usuń wszystko jednym ruchem.';
+
+  @override
+  String get whatsInside => 'ZAWARTOŚĆ';
+
+  @override
+  String exercisesInside(int n) {
+    return '$n ćwiczeń';
+  }
+
+  @override
+  String get exercisesInsideWhy => 'Każde z animacją i instrukcją krok po kroku.';
+
+  @override
+  String get calculatorsInside => '10 kalkulatorów';
+
+  @override
+  String get calculatorsInsideWhy =>
+      '1RM, talerze, BMI, kalorie, tkanka tłuszczowa, FFMI, rozgrzewka, ciężar według RPE i punktacje siły DOTS i Wilks, wszystko na podstawie opublikowanych wzorów.';
+
+  @override
+  String get mathInside => 'Przejrzyste obliczenia';
+
+  @override
+  String get mathInsideWhy =>
+      'Objętość, rekordy i serie są liczone z twoich danych. Nic nie jest tylko ozdobą.';
+
+  @override
+  String get streakCaps => 'SERIA';
+
+  @override
+  String daysUnit(int n) {
+    String _temp0 = intl.Intl.pluralLogic(n, locale: localeName, other: 'dni', one: 'dzień');
+    return '$_temp0';
+  }
+
+  @override
+  String get reset => 'RESETUJ';
+
+  @override
+  String get welcomeKicker => 'WITAJ W';
+
+  @override
+  String get welcomeBlurb => 'Wszystko zostaje na telefonie. Bez konta, bez internetu, bez opłat.';
+
+  @override
+  String get welcomeStart => 'ZACZNIJ';
+
+  @override
+  String onbStep(int i, int n) {
+    return 'KROK $i Z $n';
+  }
+
+  @override
+  String get onbNameTitle => 'Jak mamy się do ciebie zwracać?';
+
+  @override
+  String get onbNameHint => 'Twoje imię';
+
+  @override
+  String get onbPhotoAdd => 'Dodaj zdjęcie';
+
+  @override
+  String get onbPhotoChange => 'Zmień zdjęcie';
+
+  @override
+  String get onbPhotoTitle => 'Dodaj twarz do profilu';
+
+  @override
+  String get onbPhotoWhy => 'Opcjonalnie. Zostaje w telefonie i możesz je zmienić w profilu w każdej chwili.';
+
+  @override
+  String get onbPhotoLater => 'PÓŹNIEJ';
+
+  @override
+  String get onbNameWhy => 'Używane tylko do powitania. Nigdy nie opuszcza telefonu.';
+
+  @override
+  String get onbBodyTitle => 'Kilka danych';
+
+  @override
+  String get onbBodyWhy => 'Służą do kalkulatorów. Możesz je zmienić w Ustawieniach w dowolnym momencie.';
+
+  @override
+  String get onbGoalTitle => 'Jak często trenujesz?';
+
+  @override
+  String get onbGoalWhy => 'Ustala cel tygodniowy. Bądź realistą, nie przesadzaj z ambicją.';
+
+  @override
+  String perWeek(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n treningów tygodniowo',
+      one: '$n trening tygodniowo',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get onbUnitsTitle => 'Kilogramy czy funty?';
+
+  @override
+  String get next => 'DALEJ';
+
+  @override
+  String get back => 'WSTECZ';
+
+  @override
+  String get skip2 => 'Pomiń';
+
+  @override
+  String get madeWithLoveBy => 'STWORZONE Z MIŁOŚCIĄ PRZEZ';
+
+  @override
+  String get sourceCode => 'KOD ŹRÓDŁOWY';
+
+  @override
+  String get suggested => 'SUGEROWANE';
+
+  @override
+  String get results => 'WYNIKI';
+
+  @override
+  String get noMatches => 'Żadne ćwiczenie nie pasuje do wyszukiwania.';
+
+  @override
+  String get tapToEdit => 'Dotknij ołówka, aby poprawić wpis, lub kosza, aby go usunąć.';
+
+  @override
+  String get editEntry => 'Edytuj';
+
+  @override
+  String get editEntryHint => 'Popraw powtórzenia lub ciężar dowolnej serii.';
+
+  @override
+  String get removeSet => 'Usuń serię';
+
+  @override
+  String get continueWorkout => 'KONTYNUUJ';
+
+  @override
+  String get continueWorkoutBody =>
+      'Trening zostanie wznowiony z już zaznaczonymi seriami. Po ponownym zakończeniu zostanie zapisany z pierwotną datą.';
+
+  @override
+  String get addBodyWidget => 'Dodaj widżet mapy mięśni';
+
+  @override
+  String get repsOnly => 'Tylko powtórzenia';
+
+  @override
+  String get repsOnlyHint => 'Zapisuj to ćwiczenie bez ciężaru.';
+
+  @override
+  String get eachSide => 'Każda strona';
+
+  @override
+  String get eachSideHint => 'Czas leci raz na każdą stronę, a przerwa zaczyna się po obu.';
+
+  @override
+  String get useDefaultArt => 'Przywróć domyślną ilustrację';
+
+  @override
+  String daysShort(int n) {
+    return '$n d';
+  }
+
+  @override
+  String get focusCard => 'Dzisiejszy cel';
+
+  @override
+  String get autoAdvance => 'Automatycznie przechodź dalej';
+
+  @override
+  String get keepScreenOn => 'Nie wygaszaj ekranu podczas treningu';
+
+  @override
+  String get lockWorkout => 'Zablokuj ekran';
+
+  @override
+  String get unlockWorkout => 'Odblokuj';
+
+  @override
+  String get holdToUnlock => 'Przytrzymaj, aby odblokować';
+
+  @override
+  String get liveChannel => 'Trwający trening';
+
+  @override
+  String get liveChannelWhy => 'Pokazuje bieżące ćwiczenie, serię i czas przerwy podczas treningu';
+
+  @override
+  String liveSet(int n, int total) {
+    return 'Seria $n z $total';
+  }
+
+  @override
+  String get liveResting => 'Przerwa';
+
+  @override
+  String get liveAllDone => 'Wszystkie serie zrobione';
+
+  @override
+  String get autoAdvanceHint => 'Przechodzi dalej po ostatniej serii';
+
+  @override
+  String get placePlates => 'Talerze i gryf';
+
+  @override
+  String get platesAll => 'Wszystko dostępne';
+
+  @override
+  String platesOwned(int n) {
+    String _temp0 = intl.Intl.pluralLogic(n, locale: localeName, other: '$n rozmiarów', one: '$n rozmiar');
+    return '$_temp0';
+  }
+
+  @override
+  String get platePairs => 'PARY';
+
+  @override
+  String plateAchievable(String w) {
+    return 'Najbliższy możliwy ciężar: $w';
+  }
+
+  @override
+  String get autoWarmup => 'Zacznij od serii rozgrzewkowych';
+
+  @override
+  String get autoWarmupHint => 'Dodaje serie narastające po otwarciu treningu.';
+
+  @override
+  String get trainReminder => 'Przypomnienie o treningu';
+
+  @override
+  String get trainReminderHint => 'Przypomnienie o tej porze tylko w dni, na które zaplanowano plan.';
+
+  @override
+  String get reminderExactTime => 'Dokładna godzina';
+
+  @override
+  String get toastSoundSetting => 'Dźwięk powiadomień';
+
+  @override
+  String get toastSoundHint => 'Cichy dźwięk przy każdym powiadomieniu';
+
+  @override
+  String get notifTrainChannel => 'Przypomnienie o treningu';
+
+  @override
+  String get notifTrainChannelWhy => 'Przypomnienie o treningu w zaplanowane dni.';
+
+  @override
+  String get notifTrainTitle => 'Czas na trening';
+
+  @override
+  String get notifTrainBody => 'Twój plan czeka.';
+
+  @override
+  String get planIntro => 'Ułóż mi plan treningowy używając tylko ćwiczeń z tej listy.';
+
+  @override
+  String get planFormat => 'Odpowiedz wyłącznie w JSON, w tym formacie:';
+
+  @override
+  String get planNothing => 'Żadne ćwiczenie z tego pliku nie pasuje do twojej biblioteki';
+
+  @override
+  String get planFailed => 'Ten plik nie jest planem, który GymMane potrafi odczytać';
+
+  @override
+  String get routineGroup => 'Grupa';
+
+  @override
+  String get newGroup => 'Nowa grupa';
+
+  @override
+  String get noGroup => 'Brak grupy';
+
+  @override
+  String get groupNameHint => 'Push / Pull / Nogi, 5×5…';
+
+  @override
+  String get filters => 'Filtry';
+
+  @override
+  String get setsPlannedHint =>
+      'Wybierz liczbę serii dla każdego ćwiczenia. Trening otworzy się z gotowym planem.';
+
+  @override
+  String get nextTime => 'NASTĘPNYM RAZEM';
+
+  @override
+  String get nextHold => 'utrzymuj ten sam ciężar, aż wykonasz wszystkie powtórzenia';
+
+  @override
+  String get bgPhoto => 'Twoje zdjęcie';
+
+  @override
+  String get bgPhotoPick => 'Wybierz zdjęcie';
+
+  @override
+  String get bgPhotoChange => 'Zmień zdjęcie';
+
+  @override
+  String get bgPhotoRemove => 'Usuń zdjęcie';
+
+  @override
+  String get bgDim => 'PRZYCIEMNIENIE';
+
+  @override
+  String get dimSoft => 'Lekkie';
+
+  @override
+  String get dimMedium => 'Średnie';
+
+  @override
+  String get dimStrong => 'Mocne';
+
+  @override
+  String get bgPhotoHint =>
+      'Pojawia się za całym interfejsem, przyciemnione, aby aplikacja pozostała czytelna.';
+
+  @override
+  String get reminderSmart => 'Inteligentne';
+
+  @override
+  String get reminderFixed => 'Stała godzina';
+
+  @override
+  String get reminderSmartHint =>
+      'Używa dni i godzin, w których faktycznie trenujesz, i milczy, jeśli tego dnia trening już był.';
+
+  @override
+  String get reminderSmartEmpty => 'Zapisz jeszcze kilka treningów, aby aplikacja poznała twoje nawyki.';
+
+  @override
+  String habitFocus(String day) {
+    return 'co zwykle trenujesz w $day';
+  }
+
+  @override
+  String get duplicateRoutine => 'Duplikuj plan';
+
+  @override
+  String copySuffix(String name) {
+    return '$name (kopia)';
+  }
+
+  @override
+  String get saveAsRoutine => 'ZAPISZ JAKO PLAN';
+
+  @override
+  String get savedAsRoutine => 'Zapisano jako plan';
+
+  @override
+  String get templates => 'Gotowe plany';
+
+  @override
+  String get templatesHint => 'Klasyczne plany zbudowane z twojej biblioteki. Potem możesz wszystko zmienić.';
+
+  @override
+  String templateAdded(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n plany dodane',
+      one: '$n plan dodany',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get tplFullbody => 'Trzy treningi całego ciała w tygodniu. Idealne na początek.';
+
+  @override
+  String get tplPpl => 'Push, pull i nogi. Trzy lub sześć dni w tygodniu.';
+
+  @override
+  String get tplArnold => 'Klatka i plecy, barki i ręce, nogi. Klasyczny split na sześć dni.';
+
+  @override
+  String get tplUpperlower => 'Góra i dół ciała, cztery dni w tygodniu.';
+
+  @override
+  String get tplStronglifts => 'Dwa naprzemienne treningi po pięć serii po pięć powtórzeń.';
+
+  @override
+  String get tplStartingstrength => 'Przysiad na każdym treningu, z dwoma naprzemiennymi zestawami.';
+
+  @override
+  String get tplHome => 'Tylko drążek do podciągania i podłoga.';
+
+  @override
+  String dayCount(int n) {
+    String _temp0 = intl.Intl.pluralLogic(n, locale: localeName, other: '$n dni', one: '$n dzień');
+    return '$_temp0';
+  }
+
+  @override
+  String get logRpe => 'Zapisuj wysiłek (RPE)';
+
+  @override
+  String get rpeHint => '10 = brak możliwości kolejnego powtórzenia; 8 = około dwa powtórzenia w zapasie.';
+
+  @override
+  String get superset => 'Superseria';
+
+  @override
+  String get supersetLink => 'Połącz z następnym';
+
+  @override
+  String get supersetUnlink => 'Odłącz od następnego';
+
+  @override
+  String get supersetHint =>
+      'Bez odpoczynku między połączonymi ćwiczeniami, przechodzisz od razu do następnego.';
+
+  @override
+  String get aiRoutine => 'Plan z AI';
+
+  @override
+  String get aiIntro =>
+      'GymMane nigdy nie łączy się bezpośrednio z AI. Eksportujesz listę ćwiczeń, wklejasz ją do używanego asystenta, a potem importujesz jego odpowiedź. Nic samo nie opuszcza telefonu.';
+
+  @override
+  String aiMissing(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n nazw nie było w bibliotece',
+      one: '1 nazwy nie było w bibliotece',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get importApps => 'Obsługiwane aplikacje';
+
+  @override
+  String get importOtherCsv => 'Każdy inny CSV z datą, ćwiczeniem, powtórzeniami i ciężarem';
+
+  @override
+  String get importAskApp => 'Potrzebujesz innej aplikacji? Poproś o jej dodanie';
+
+  @override
+  String get awardFirstStepName => 'Pierwszy krok';
+
+  @override
+  String get awardFirstStepLine => 'Witaj w GymMane. Ten dostajesz w prezencie.';
+
+  @override
+  String get awardFirstWorkoutName => 'Pierwszy trening';
+
+  @override
+  String get awardFirstWorkoutLine => 'Pierwszy zapisany. To najtrudniejszy.';
+
+  @override
+  String get awardFirstRoutineName => 'Pierwszy plan';
+
+  @override
+  String get awardFirstRoutineLine => 'Masz teraz plan, do którego możesz wracać.';
+
+  @override
+  String get awardFirstRecordName => 'Pierwszy rekord';
+
+  @override
+  String get awardFirstRecordLine => 'Pobiłeś swój najlepszy wynik w ćwiczeniu.';
+
+  @override
+  String get awardStreak3Name => 'Trzy z rzędu';
+
+  @override
+  String get awardStreak3Line => 'Trzy dni z rzędu. Tak to się zaczyna.';
+
+  @override
+  String get awardTonne1Name => 'Jedna tona';
+
+  @override
+  String get awardTonne1Line => 'Łącznie tysiąc kilogramów podniesionych w seriach.';
+
+  @override
+  String get awardSets100Name => 'Sto serii';
+
+  @override
+  String get awardSets100Line => 'Sto ukończonych serii, jedna po drugiej.';
+
+  @override
+  String get awardHours10Name => 'Dziesięć godzin';
+
+  @override
+  String get awardHours10Line => 'Dziesięć godzin treningu na liczniku.';
+
+  @override
+  String get awardWorkouts50Name => 'Pięćdziesiąt treningów';
+
+  @override
+  String get awardWorkouts50Line => 'Pięćdziesiąt treningów za tobą.';
+
+  @override
+  String get awardHours50Name => 'Pięćdziesiąt godzin';
+
+  @override
+  String get awardHours50Line => 'Pięćdziesiąt godzin spędzonych na treningu.';
+
+  @override
+  String get awardsTitle => 'Medale';
+
+  @override
+  String get yearTitle => 'Twój rok';
+
+  @override
+  String get yearBestMonth => 'Najlepszy miesiąc';
+
+  @override
+  String get yearMonths => 'miesięcy';
+
+  @override
+  String get awardSpinHint => 'Przeciągnij medal, aby go obrócić';
+
+  @override
+  String get awardUnlocked => 'Odblokowano nowe osiągnięcie';
+
+  @override
+  String get awardNice => 'Brawo!';
+
+  @override
+  String get awardSaveImage => 'Zapisz obraz';
+
+  @override
+  String get awardSaved => 'Zapisano w galerii';
+
+  @override
+  String get awardStreak7Name => 'Siedem dni';
+
+  @override
+  String get awardStreak7Line => 'Cały tydzień bez opuszczenia dnia.';
+
+  @override
+  String get awardStreak30Name => 'Trzydzieści dni';
+
+  @override
+  String get awardStreak30Line => 'Miesiąc z rzędu. Teraz to już nawyk.';
+
+  @override
+  String get awardWorkouts100Name => 'Sto treningów';
+
+  @override
+  String get awardWorkouts100Line => 'Sto treningów zapisanych od początku do końca.';
+
+  @override
+  String get awardTonnes100Name => 'Sto ton';
+
+  @override
+  String get awardTonnes100Line => 'Wszystko, co podniosłeś, daje 100 000 kg.';
+
+  @override
+  String get awardSets1000Name => 'Tysiąc serii';
+
+  @override
+  String get awardSets1000Line => 'Seria po serii, aż do tysiąca.';
+
+  @override
+  String get profile => 'Profil';
+
+  @override
+  String get editProfile => 'Edytuj profil';
+
+  @override
+  String get pickBadge => 'Odznaka';
+
+  @override
+  String get statWorkouts => 'Treningi';
+
+  @override
+  String get statTrained => 'Trening';
+
+  @override
+  String get statSets => 'Serie';
+
+  @override
+  String get statLifted => 'Podniesiono';
+
+  @override
+  String get statStreak => 'Seria';
+
+  @override
+  String get statDays => 'dni';
+
+  @override
+  String get unitHours => 'g';
+
+  @override
+  String get unitDays => 'dni';
+
+  @override
+  String get snapshots => 'Zdjęcia';
+
+  @override
+  String get snapNow => 'Zrób teraz';
+
+  @override
+  String get addCover => 'Dodaj okładkę';
+
+  @override
+  String get addTodayWidget => 'Czy dzisiejszy trening wykonany';
+
+  @override
+  String get photosCard => 'Twoje zdjęcia';
+
+  @override
+  String get handleLabel => 'Nazwa użytkownika';
+
+  @override
+  String get setupTitle => 'Uzupełnij te dane, a reszta strony wypełni się automatycznie';
+
+  @override
+  String get setupHint => 'Każda liczba pochodzi z twoich zapisów. Nic nie jest nigdzie wysyłane.';
+
+  @override
+  String get setupWorkout => 'Zapisz pierwszy trening';
+
+  @override
+  String get setupWeight => 'Zapisz masę ciała';
+
+  @override
+  String get setupMeasures => 'Zrób pomiary ciała';
+
+  @override
+  String get setupPhoto => 'Zrób pierwsze zdjęcie postępów';
+
+  @override
+  String get progressTitle => 'Postęp';
+
+  @override
+  String get tileVolume30 => 'Objętość · 30 d';
+
+  @override
+  String get tileAddWeight => 'Dodaj swoje';
+
+  @override
+  String get heatToneTitle => 'Kolor mapy cieplnej';
+
+  @override
+  String get heatToneHint => 'Zmienia tylko kolor siatki i ciała.';
+
+  @override
+  String get thisWeekTitle => 'Ten tydzień';
+
+  @override
+  String get momentsEmptyTitle => 'Jeszcze nic tu nie ma';
+
+  @override
+  String get deletePhotoTitle => 'Usunąć to zdjęcie?';
+
+  @override
+  String get deletePhotoBody => 'Zostanie trwale usunięte.';
+
+  @override
+  String get awardsEarned => 'Zdobyte';
+
+  @override
+  String get awardsLocked => 'Zablokowane';
+
+  @override
+  String get awardStreak100Name => 'Sto dni';
+
+  @override
+  String get awardWorkouts10Name => 'Dziesięć treningów';
+
+  @override
+  String get awardWorkouts10Line => 'Pierwsze dziesięć robi różnicę.';
+
+  @override
+  String get awardWorkouts365Name => 'Trzysta sześćdziesiąt pięć';
+
+  @override
+  String get awardWorkouts365Line => 'Trening na każdy dzień roku, zapisywany jeden po drugim.';
+
+  @override
+  String get awardTonnes10Name => 'Dziesięć ton';
+
+  @override
+  String get awardTonnes10Line => 'Dziesięć tysięcy kilogramów przeszło przez twoje ręce.';
+
+  @override
+  String get awardHours100Name => 'Sto godzin';
+
+  @override
+  String get awardHours100Line => 'Sto godzin pod sztangą, z włączonym zegarem.';
+
+  @override
+  String awardWonOn(String date) {
+    return 'Zdobyto $date';
+  }
+
+  @override
+  String badgeName(String id) {
+    String _temp0 = intl.Intl.selectLogic(id, {
+      'gold': 'Złota',
+      'blue': 'Niebieska',
+      'green': 'Zielona',
+      'other': 'Odznaka',
+    });
+    return '$_temp0';
+  }
+
+  @override
+  String memberSince(String date) {
+    return 'Od $date';
+  }
+
+  @override
+  String levelShort(int n) {
+    return 'Poziom $n';
+  }
+
+  @override
+  String levelToNext(int n, int next) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n treningów do poziomu $next',
+      one: '1 trening do poziomu $next',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String heightCm(int n) {
+    return '$n cm';
+  }
+
+  @override
+  String heatToneName(String id) {
+    String _temp0 = intl.Intl.selectLogic(id, {
+      'ember': 'Żar',
+      'green': 'Zielony',
+      'blue': 'Niebieski',
+      'mono': 'Szary',
+      'other': 'Kolor',
+    });
+    return '$_temp0';
+  }
+
+  @override
+  String setsThisWeek(int n) {
+    return '$n serii';
+  }
+
+  @override
+  String weekOfGoal(int n, int goal) {
+    return '$n z $goal w tym tygodniu';
+  }
+
+  @override
+  String momentCount(int n) {
+    return '$n zdjęć';
+  }
+
+  @override
+  String photosSelected(int n) {
+    return 'Zaznaczono: $n';
+  }
+
+  @override
+  String deletePhotosTitle(int n) {
+    return 'Usunąć zdjęcia ($n)?';
+  }
+
+  @override
+  String get momentsEmptyHint =>
+      'Zrób zdjęcie siłowni, tablicy, załadowanej sztangi. Czegokolwiek, co chcesz zapamiętać. Zostaje na telefonie i tylko ty je widzisz.';
+
+  @override
+  String get awardStreak100Line => 'Sto dni z rzędu. To już nie motywacja, to nawyk.';
+
+  @override
+  String get coverLabel => 'OKŁADKA';
+
+  @override
+  String get removeCover => 'Usuń okładkę';
+
+  @override
+  String get startTitle => 'Rozpocznij trening';
+
+  @override
+  String get logTitle => 'Zapisz trening';
+
+  @override
+  String get logHint => 'Bez minutnika, po prostu wpisz, co zrobiłeś.';
+
+  @override
+  String get orStartFrom => 'Lub zacznij od';
+
+  @override
+  String get pickExercisesOption => 'Wybierz ćwiczenia';
+
+  @override
+  String get chooseFocusOption => 'Wybierz cel';
+
+  @override
+  String get plannedRoutine => 'ZAPLANOWANE';
+
+  @override
+  String get logWorkoutAction => 'ZAPISZ TRENING';
+
+  @override
+  String get logging => 'ZAPISYWANIE';
+
+  @override
+  String get placesLabel => 'Moje miejsca';
+
+  @override
+  String get undo => 'Cofnij';
+
+  @override
+  String get deleteSet => 'Usuń serię';
+
+  @override
+  String get setDeleted => 'Seria usunięta';
+
+  @override
+  String get removeWarmup => 'Usuń rozgrzewkę';
+
+  @override
+  String get addWeightAction => 'Dodaj ciężar';
+
+  @override
+  String get workoutOverview => 'Ten trening';
+
+  @override
+  String get allExercisesShort => 'Wszystkie';
+
+  @override
+  String setsDoneOf(int done, int total) {
+    return '$done/$total serii';
+  }
+
+  @override
+  String get nowLabel => 'Teraz';
+
+  @override
+  String get deleteWorkout => 'Usuń trening';
+
+  @override
+  String get deleteWorkoutBody => 'Ten trening i wszystkie jego serie zostaną usunięte z historii.';
+
+  @override
+  String get themeAuto => 'Auto';
+
+  @override
+  String get themeAutoHint => 'Jak w telefonie';
+
+  @override
+  String get demoSizeTitle => 'Demo ćwiczenia podczas treningu';
+
+  @override
+  String get demoLarge => 'Duże';
+
+  @override
+  String get demoSmall => 'Małe';
+
+  @override
+  String get demoOff => 'Ukryte';
+
+  @override
+  String get demoLoopTitle => 'Animacja demo';
+
+  @override
+  String get demoLoopAlways => 'W pętli';
+
+  @override
+  String get demoLoopShort => '10 sekund';
+
+  @override
+  String get demoLoopHint =>
+      'Porusza się przez około 10 sekund i zatrzymuje w pozycji wyjściowej. Stuknij demo, aby obejrzeć je ponownie.';
+
+  @override
+  String get alarmStyleTitle => 'Po końcu przerwy';
+
+  @override
+  String get alarmStyleLoud => 'Zawsze dzwoń';
+
+  @override
+  String get alarmStyleQuiet => 'Szanuj tryb cichy';
+
+  @override
+  String get alarmStyleVibrate => 'Tylko wibracje';
+
+  @override
+  String get alarmStyleHint =>
+      '„Zawsze dzwoń” używa głośności alarmu, nawet w trybie cichym. „Szanuj tryb cichy” używa głośności powiadomień i tylko wibruje, gdy telefon jest wyciszony.';
+
+  @override
+  String get suggestedPicks => 'Polecane dla ciebie';
+
+  @override
+  String get moreOptions => 'Więcej opcji';
+
+  @override
+  String get suggestInWorkouts => 'Proponuj w szybkich treningach';
+
+  @override
+  String get suggestInWorkoutsHint => 'Wyłączone nie trafia do propozycji. Nadal możesz dodać je ręcznie.';
+
+  @override
+  String get onbPlaceTitle => 'Gdzie trenujesz?';
+
+  @override
+  String get onbPlaceWhy =>
+      'Zaznacz wszystkie miejsca, w których trenujesz. Zaproponujemy tylko to, co możesz zrobić w każdym z nich.';
+
+  @override
+  String get onbPlaceGear => 'Co tam masz?';
+
+  @override
+  String distanceCol(String unit) {
+    return 'DYSTANS ($unit)';
+  }
+
+  @override
+  String get timeCol => 'CZAS';
+
+  @override
+  String get timePerSideCol => 'CZAS / STRONA';
+
+  @override
+  String get timeMinutesTitle => 'Czas (minuty)';
+
+  @override
+  String get timeSecondsTitle => 'Czas (sekundy)';
+
+  @override
+  String distanceTitle(String unit) {
+    return 'Dystans ($unit)';
+  }
+
+  @override
+  String get holdLabel => 'Utrzymaj';
+
+  @override
+  String get stopLabel => 'Stop';
+
+  @override
+  String startHold(String time) {
+    return 'Start · $time';
+  }
+
+  @override
+  String get exerciseTypeLabel => 'Zapisuj';
+
+  @override
+  String get typeReps => 'Powtórzenia i ciężar';
+
+  @override
+  String get typeTime => 'Czas';
+
+  @override
+  String get typeCardio => 'Dystans i czas';
+
+  @override
+  String get exerciseTypeHint =>
+      'Cardio, jak bieganie czy pływanie, zapisuje dystans i czas. Pozycje statyczne, jak deska, zapisują czas.';
+
+  @override
+  String get howToLabel => 'Jak wykonać (opcjonalnie)';
+
+  @override
+  String get howToHint => 'Jeden krok w linii';
+
+  @override
+  String get editExercise => 'Edytuj ćwiczenie';
+
+  @override
+  String get saveChanges => 'Zapisz zmiany';
+
+  @override
+  String get noStepsYet => 'Brak kroków. Zapisz własne, żeby pamiętać, jak to robisz.';
+
+  @override
+  String get addSteps => 'Zapisz kroki';
+
+  @override
+  String get setTypeRestPause => 'Rest-pause';
+
+  @override
+  String get setTypeNormalInfo => 'Zwykła seria. Liczy się do objętości i rekordów.';
+
+  @override
+  String get setTypeWarmupInfo => 'Lekkie serie na rozgrzewkę. Nie liczą się do objętości ani rekordów.';
+
+  @override
+  String get setTypeDropInfo => 'Zaraz po serii zmniejsz ciężar i kontynuuj bez odpoczynku.';
+
+  @override
+  String get setTypeFailureInfo =>
+      'Ćwicz, aż nie dasz rady zrobić kolejnego czystego powtórzenia. Zapisz te, które faktycznie zrobiłeś.';
+
+  @override
+  String get setTypeRestPauseInfo =>
+      'Odpocznij 10–20 sekund po serii, a potem wyciśnij jeszcze kilka powtórzeń.';
+
+  @override
+  String get planFormatNotes =>
+      'Używaj nazw ćwiczeń dokładnie tak, jak na liście. \"sets\", \"reps\", \"weight\" (w podanej jednostce), \"rest\" w sekundach i \"days\" są opcjonalne. \"superset\": true łączy ćwiczenie z następnym. Dla kilku tygodni zgrupuj rutyny w \"weeks\", jak w drugim przykładzie.';
+
+  @override
+  String get planSets => 'Zaplanuj serie';
+
+  @override
+  String get planSetsHint =>
+      'Wybierz typ, powtórzenia i ciężar każdej serii. Zostaw ciężar na Auto, by zacząć od ostatniego treningu.';
+
+  @override
+  String get planHintReps => 'Wybierz typ i powtórzenia każdej serii. Auto zaczyna od ostatniej sesji.';
+
+  @override
+  String get planHintTime => 'Wybierz typ i czas każdej serii. Auto zaczyna od ostatniej sesji.';
+
+  @override
+  String get planHintTimeWeight =>
+      'Wybierz typ, czas i ciężar każdej serii. Auto zaczyna od ostatniej sesji.';
+
+  @override
+  String get planHintCardio => 'Wybierz dystans i czas każdej serii. Auto zaczyna od ostatniej sesji.';
+
+  @override
+  String get timeOnly => 'Tylko czas';
+
+  @override
+  String get autoValue => 'Auto';
+
+  @override
+  String get clearPlan => 'Wyczyść plan';
+
+  @override
+  String get shareRoutine => 'Udostępnij rutynę';
+
+  @override
+  String get shareWeek => 'Udostępnij mój tydzień';
+
+  @override
+  String get shareWeekHint => 'Wszystkie twoje rutyny i dzień każdej z nich.';
+
+  @override
+  String shareMessage(String name) {
+    return '$name: otwórz plik w GymMane, aby go dodać.';
+  }
+
+  @override
+  String get importRoutines => 'Importuj rutyny';
+
+  @override
+  String get importPasteHint => 'Wklej tu rutynę: udostępnioną z GymMane, odpowiedź AI, JSON lub CSV.';
+
+  @override
+  String get pasteAction => 'Wklej';
+
+  @override
+  String routineCount(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n rutyn',
+      few: '$n rutyny',
+      one: '1 rutyna',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get useTheirSchedule => 'Użyj też jej planu tygodnia';
+
+  @override
+  String get useTheirScheduleHint => 'Dni, które zawiera, zastąpią to, co masz zaplanowane na te dni.';
+
+  @override
+  String get addToMyRoutines => 'Dodaj do moich rutyn';
+
+  @override
+  String routinesAdded(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: 'Dodano $n rutyn',
+      few: 'Dodano $n rutyny',
+      one: 'Dodano 1 rutynę',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get nothingToImport => 'Nic tu nie da się zaimportować';
+
+  @override
+  String get aiStepCopy => 'Skopiuj prośbę. Zawiera listę twoich ćwiczeń i format, który czyta GymMane.';
+
+  @override
+  String get aiStepAsk =>
+      'Wklej ją do dowolnej AI i powiedz, czego chcesz: dni w tygodniu, cel, ile tygodni.';
+
+  @override
+  String get aiStepPaste => 'Wklej odpowiedź poniżej i zaimportuj. Plik niepotrzebny.';
+
+  @override
+  String get copyForAi => 'Kopiuj dla AI';
+
+  @override
+  String get copiedDone => 'Skopiowano';
+
+  @override
+  String get aiPasteHint => 'Wklej tu odpowiedź AI';
+
+  @override
+  String get importAction => 'Importuj';
+
+  @override
+  String get showFormat => 'Zobacz format';
+
+  @override
+  String get shareAsFile => 'Udostępnij jako plik';
+
+  @override
+  String get recoveryTab => 'Regeneracja';
+
+  @override
+  String recoveryOverall(int pct) {
+    return 'Ciało zregenerowane w $pct%';
+  }
+
+  @override
+  String get recoveryAllFresh => 'Wszystko zregenerowane. Dobry dzień na każdy trening.';
+
+  @override
+  String recoveryStill(String muscles) {
+    return 'Jeszcze się regeneruje: $muscles';
+  }
+
+  @override
+  String get recoveryTired => 'Zmęczony';
+
+  @override
+  String get recoveryFresh => 'Wypoczęty';
+
+  @override
+  String get recoveryHint =>
+      'Dotknij mięśnia, by zobaczyć, jak jest zregenerowany. Niedawne serie ważą więcej, a cięższe (wg RPE) jeszcze więcej.';
+
+  @override
+  String recoveryPct(int pct) {
+    return 'Zregenerowany w $pct%';
+  }
+
+  @override
+  String readyInHours(int h) {
+    return 'gotowy za ~$h h';
+  }
+
+  @override
+  String get tplAbcd => 'Cztery dni: klatka i triceps, plecy i biceps, nogi, barki i brzuch.';
+
+  @override
+  String get tplAbcde => 'Pięć dni, jedna partia dziennie: klatka, plecy, nogi, barki, ramiona.';
+
+  @override
+  String get elapsedCaps => 'UPŁYNĘŁO';
+
+  @override
+  String get tapToChange => 'Dotknij, by zmienić';
+
+  @override
+  String get swipeToSkipHint => 'Przesuń minutnik w bok, by pominąć przerwę.';
+
+  @override
+  String get screenLocked => 'Ekran zablokowany';
+
+  @override
+  String get lockedHint => 'Przytrzymaj odcisk palca u góry, aby odblokować';
+
+  @override
+  String get liveDoneSet => 'Seria zrobiona';
+
+  @override
+  String get liveSkipRest => 'Pomiń przerwę';
+
+  @override
+  String get livePause => 'Pauza';
+
+  @override
+  String get liveResume => 'Wznów';
+
+  @override
+  String get liveNext => 'Dalej';
+
+  @override
+  String liveUpNext(String name) {
+    return 'Następne: $name';
+  }
+
+  @override
+  String get stickerOpen => 'Udostępnij na zdjęciu';
+
+  @override
+  String get stickerNoPhoto => 'Bez zdjęcia';
+
+  @override
+  String get stickerWorkout => 'Trening';
+
+  @override
+  String get stickerStreak => 'Seria';
+
+  @override
+  String get stickerDate => 'Data';
+
+  @override
+  String get stickerHint => 'Przeciągnij, by przesunąć, uszczypnij, by zmienić rozmiar lub obrócić';
+
+  @override
+  String get stickerSaved => 'Zapisano w galerii';
+
+  @override
+  String get stickerWeek => 'Ten tydzień';
+
+  @override
+  String get getReady => 'Przygotuj się';
+
+  @override
+  String sideOfTwo(String n) {
+    return 'Strona $n z 2';
+  }
+
+  @override
+  String get switchSides => 'Zmień stronę';
+
+  @override
+  String get stickerGallery => 'Galeria';
+
+  @override
+  String get stickerCamera => 'Aparat';
+
+  @override
+  String get shareIntroTitle => 'Udostępnij tę rutynę';
+
+  @override
+  String get shareIntroBody =>
+      'Wyślij ją partnerowi, znajomemu lub rodzinie. Dostaną mały plik, który otwiera się w GymMane i dodaje rutynę jednym dotknięciem, z seriami i ciężarami.';
+
+  @override
+  String get removedFromRoutine => 'Usunięto z rutyny';
+
+  @override
+  String get radarTitle => 'Ostatnie 30 dni';
+
+  @override
+  String get radarHint => 'Zobacz, które partie potrzebują więcej pracy';
+
+  @override
+  String get radarEmpty => 'Potrenuj kilka dni, by zobaczyć swoją równowagę';
+
+  @override
+  String get radarBalanced => 'Na razie dobra równowaga';
+
+  @override
+  String radarFocus(String list) {
+    return 'Potrzeba więcej: $list';
+  }
+
+  @override
+  String get countdownReady => 'Przygotuj się';
+
+  @override
+  String get countdownSkip => 'Dotknij, aby zacząć od razu';
+
+  @override
+  String get countdownSetting => 'Odliczanie przed startem';
+
+  @override
+  String get effortSetting => 'Zapisuj wysiłek';
+
+  @override
+  String get effortHint =>
+      'RPE: 10 to brak sił na kolejne powtórzenie, 8 to jeszcze dwa w zapasie. RIR liczy powtórzenia, które zostały. Jeśli seria go ma, szacowany 1RM korzysta z tabeli RPE.';
+
+  @override
+  String get rirHint => '0 to brak sił na kolejne powtórzenie, 2 to jeszcze dwa w zapasie.';
+
+  @override
+  String get addWeekWidget => 'Dodaj widżet tygodnia';
+
+  @override
+  String get gamificationSetting => 'Medale i poziomy';
+
+  @override
+  String repCount(int n) {
+    String _temp0 = intl.Intl.pluralLogic(n, locale: localeName, other: '$n powt.', one: '$n powt.');
+    return '$_temp0';
+  }
+
+  @override
+  String get prBestSet => 'Najlepsza seria';
+
+  @override
+  String get weekStartSetting => 'Tydzień zaczyna się w';
+
+  @override
+  String get stepOutOfWorkout => 'Wstrzymaj i wyjdź';
+
+  @override
+  String get saveToRoutine => 'ZAPISZ ZMIANY W PLANIE';
+
+  @override
+  String get routineUpdated => 'Plan zaktualizowany';
+
+  @override
+  String saveChangesTitle(String name) {
+    return 'Zapisać zmiany w $name?';
+  }
+
+  @override
+  String get saveChangesBody => 'Gdy następnym razem go zaczniesz, plan będzie miał te zmiany.';
+
+  @override
+  String get routineOrderChanged => 'Nowa kolejność ćwiczeń';
+
+  @override
+  String get mineOnly => 'Utworzone przez ciebie';
+
+  @override
+  String createNamed(String name) {
+    return 'Nie ma? Utwórz „$name”';
+  }
+
+  @override
+  String get orStartWith => 'Albo zacznij od';
+
+  @override
+  String get warmupFocus => 'Rozgrzewka';
+
+  @override
+  String get warmupFocusHint => 'Mobilność i aktywacja, ze sprzętem lub bez';
+
+  @override
+  String get cardioFocus => 'Cardio';
+
+  @override
+  String get cardioFocusHint => 'Bieg, rower, wioślarz lub skakanka, na dystans i czas';
+
+  @override
+  String get homeRecommended => 'Polecane na ekranie głównym';
+
+  @override
+  String get homeRoutines => 'Rutyny na ekranie głównym';
+
+  @override
+  String get homeRoutinesHint => 'Ostatnio robione najpierw';
+
+  @override
+  String get homeWeekStats => 'Ten tydzień na ekranie głównym';
+
+  @override
+  String get homeWeekStatsHint => 'Objętość, serie i rekordy z tego tygodnia';
+
+  @override
+  String get stepsSetting => 'Kroki z Health Connect';
+
+  @override
+  String get stepsSettingHint => 'Dzisiejsze kroki na Start';
+
+  @override
+  String get stepsToday => 'Kroki dziś';
+
+  @override
+  String stepsOfGoal(String goal) {
+    return 'z $goal';
+  }
+
+  @override
+  String stepsTodayCount(String count) {
+    return 'Dziś kroków: $count';
+  }
+
+  @override
+  String get stepsGoal => 'Dzienny cel kroków';
+
+  @override
+  String get stepsNoAccess => 'Brak dostępu do kroków';
+
+  @override
+  String get stepsGrant => 'Dotknij, aby zezwolić w Health Connect';
+
+  @override
+  String get stepsInfoRead =>
+      'Odczytuje tylko liczbę kroków. Nie czyta nic innego i nigdy nie zapisuje w Health Connect.';
+
+  @override
+  String get stepsInfoLocal => 'Twoje kroki zostają w telefonie. GymMane nigdy nie łączy się z internetem.';
+
+  @override
+  String get stepsInfoOff => 'Możesz to wyłączyć w każdej chwili w Ustawieniach lub w Health Connect.';
+
+  @override
+  String get stepsManage => 'Zarządzaj uprawnieniem';
+
+  @override
+  String get routineDoneToday => 'Na dziś gotowe · dobra robota';
+
+  @override
+  String get trainAgain => 'Trenuj jeszcze raz';
+
+  @override
+  String lastDoneAgo(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n dni temu',
+      many: '$n dni temu',
+      few: '$n dni temu',
+      one: 'Zrobione wczoraj',
+      zero: 'Zrobione dziś',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get archivedFilter => 'Zarchiwizowane';
+
+  @override
+  String get archiveExercise => 'Archiwizuj ćwiczenie';
+
+  @override
+  String get restoreExercise => 'Przywróć';
+
+  @override
+  String get archivedToast => 'Ćwiczenie zarchiwizowane';
+
+  @override
+  String get archivedToastHint => 'Znajdziesz je w Ćwiczenia › Zarchiwizowane';
+
+  @override
+  String get archivedBanner =>
+      'Zarchiwizowane. Nie pojawia się na listach ani w propozycjach; historia zostaje.';
+
+  @override
+  String get videoMarksHint => 'Zatrzymaj na kroku i dotknij pinezki, aby następnym razem tam przeskoczyć.';
+
+  @override
+  String get videoMarkHere => 'Oznacz tu ten krok';
+
+  @override
+  String get sectionGeneral => 'Ogólne';
+
+  @override
+  String get sectionTraining => 'Trening';
+
+  @override
+  String get sectionAlerts => 'Przypomnienia i alarm';
+
+  @override
+  String get sectionHome => 'Ekran główny';
+
+  @override
+  String get sectionWidgets => 'Widżety';
+
+  @override
+  String get sectionData => 'Dane i kopia zapasowa';
+
+  @override
+  String get multiPlanSetting => 'Kilka planów dziennie';
+
+  @override
+  String get multiPlanHint => 'Dotknij każdego planu na ten dzień. Idą w kolejności dodania.';
+
+  @override
+  String routineOfDay(int n, int total) {
+    return '$n z $total dziś';
+  }
+
+  @override
+  String get nextToday => 'Następna dzisiaj';
+
+  @override
+  String get planAboutMe => 'O mnie:';
+
+  @override
+  String planBody(String sex, int age, String height, String weight) {
+    return '$sex, $age lat, $height wzrostu, $weight.';
+  }
+
+  @override
+  String planDays(int n) {
+    return 'Chcę trenować $n dni w tygodniu.';
+  }
+
+  @override
+  String get planNoHistory =>
+      'Nie mam jeszcze zapisanych treningów: traktuj mnie jak początkującego i ostrożnie dobieraj objętość i ciężary.';
+
+  @override
+  String planHistory(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n treningów w ostatnich 30 dniach.',
+      one: '1 trening w ostatnich 30 dniach.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get planBestLifts => 'Najlepsze ostatnie serie';
+
+  @override
+  String get planAskFirst =>
+      'Jeśli nie znasz mojego celu (siła, mięśnie, redukcja lub ogólna forma) albo długości sesji, najpierw zapytaj mnie krótko. Potem odpowiedz wyłącznie w JSON.';
+
+  @override
+  String get backToTop => 'Na górę';
+
+  @override
+  String get deleteExerciseTitle => 'Usunąć to ćwiczenie?';
+
+  @override
+  String deleteExerciseBody(String name) {
+    return '„$name” zniknie z biblioteki i planów. Wcześniejsze serie zostaną.';
+  }
+
+  @override
+  String get exportForStravaHint =>
+      'Prześlij w przeglądarce na strava.com/upload/select (aplikacja Strava nie importuje plików). Pojawi się jako trening siłowy z twoimi seriami.';
+
+  @override
+  String get manualStartTime => 'Godzina rozpoczęcia';
+
+  @override
+  String get manualDuration => 'Czas trwania';
+
+  @override
+  String get manualDurationUnset => 'Dodaj czas trwania';
+
+  @override
+  String get stravaRow => 'Eksport do Stravy (beta)';
+
+  @override
+  String get stravaBeta => 'BETA';
+
+  @override
+  String get stravaIntro =>
+      'Wybierz trening do Stravy. Dostaniesz plik .fit: prześlij go w przeglądarce na strava.com/upload/select, a pojawi się jako trening siłowy z seriami.';
+
+  @override
+  String get stravaEmpty => 'Brak treningów do eksportu.';
+
+  @override
+  String get tapToPause => 'Dotknij, aby wstrzymać';
+
+  @override
+  String get holdPausedHint => 'Wstrzymane · dotknij, aby wznowić';
+
+  @override
+  String get finishHoldNow => 'Zakończ serię teraz';
+
+  @override
+  String get barWeightExercise => 'Waga sztangi lub sanek';
+
+  @override
+  String get barWeightHint => 'Używana przez kalkulator talerzy';
+
+  @override
+  String get barWeightCustom => 'Własna · dotknij, aby przywrócić';
+
+  @override
+  String get groupRename => 'Zmień nazwę grupy';
+
+  @override
+  String get groupUngroup => 'Usuń grupę, zachowaj rutyny';
+
+  @override
+  String get groupDeleteAll => 'Usuń grupę i rutyny';
+
+  @override
+  String groupDeleteTitle(String name) {
+    return 'Usunąć „$name”?';
+  }
+
+  @override
+  String groupDeleteBody(String count) {
+    return 'Zostaną usunięte: $count. Historia treningów zostaje.';
+  }
+
+  @override
+  String get tplRr =>
+      'Klasyk z r/bodyweightfitness: całe ciało trzy dni w tygodniu. Przejdź o krok wyżej, gdy zrobi się łatwo.';
+
+  @override
+  String get levelUpKicker => 'NASTĘPNY KROK';
+
+  @override
+  String levelUpBody(int reps, String name) {
+    return '3×$reps w $name dwa treningi z rzędu. Gotowy na następny krok?';
+  }
+
+  @override
+  String levelUpSwap(String routine) {
+    return 'Zamień w $routine';
+  }
+
+  @override
+  String get levelUpSee => 'Zobacz, jak to zrobić';
+
+  @override
+  String get levelUpLater => 'Nie teraz';
+
+  @override
+  String get levelUpStay => 'Zostaję przy tym';
+
+  @override
+  String levelUpSwapped(String name, String routine) {
+    return '$name jest teraz w $routine';
+  }
+
+  @override
+  String get levelUpStayed => 'Koniec podpowiedzi o progresji dla tego ćwiczenia';
+
+  @override
+  String get levelHintsSetting => 'Podpowiadaj następny krok';
+
+  @override
+  String get heatmapLabelsSetting => 'Dni i miesiące na mapie aktywności';
+
+  @override
+  String get rmPercent => 'PROCENT';
+
+  @override
+  String rmAtPercent(String pct) {
+    return '$pct twojego maksimum';
+  }
+
+  @override
+  String get copyWorkout => 'Kopiuj jako tekst';
+
+  @override
+  String get goalSet => 'Ustaw cel';
+
+  @override
+  String get goalTargetReps => 'DOCELOWE POWTÓRZENIA';
+
+  @override
+  String goalToGo(String value) {
+    return 'Brakuje $value';
+  }
+
+  @override
+  String get goalReached => 'Cel osiągnięty';
+
+  @override
+  String goalDaysLeft(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: 'Zostało $n dni',
+      few: 'Zostały $n dni',
+      one: 'Został 1 dzień',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get goalOverdue => 'Termin minął';
+
+  @override
+  String get goalDeadline => 'TERMIN';
+
+  @override
+  String get goalNoDeadline => 'Bez terminu';
+
+  @override
+  String get goalRemove => 'Usuń cel';
+
+  @override
+  String get exerciseNameMissing => 'Nadaj nazwę';
+
+  @override
+  String get aliasesLabel => 'Inne nazwy (opcjonalnie)';
+
+  @override
+  String get aliasesHint => 'Inne nazwy, oddzielone przecinkami';
+
+  @override
+  String alsoCalled(String names) {
+    return 'Też: $names';
+  }
+
+  @override
+  String get addToRoutine => 'Dodaj do planu';
+
+  @override
+  String inRoutines(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: 'W $n planach',
+      one: 'W 1 planie',
+      zero: 'Jeszcze w żadnym planie',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get alreadyInRoutine => 'Już jest w planie';
+
+  @override
+  String get restInRoutine => 'Przerwa w tym planie';
+
+  @override
+  String get restInRoutineHint => 'Taka sama jak w ćwiczeniu';
+
+  @override
+  String get restInRoutineReset => 'Tylko tutaj · dotknij, by cofnąć';
+
+  @override
+  String get swapExercise => 'Zamień ćwiczenie';
+
+  @override
+  String get swapShort => 'Zamień';
+
+  @override
+  String swapHint(String name) {
+    return 'Zamiast $name, tylko dziś. Na koniec możesz zostawić je w planie.';
+  }
+
+  @override
+  String get swapKeepsDone => 'Zrobione serie zostają; nowe ćwiczenie dokończy resztę.';
+
+  @override
+  String swapSameMuscle(String muscle) {
+    return 'Ta sama partia · $muscle';
+  }
+
+  @override
+  String get swapDoneBefore => 'Już robione';
+
+  @override
+  String get multiPlanSettingHint => 'Więcej niż jeden plan w tym samym dniu tygodnia';
+
+  @override
+  String get levelHintsHint => 'Proponuje trudniejszą wersję';
+
+  @override
+  String get focusCardHint => 'Dzisiejszy plan na górze ekranu głównego';
+
+  @override
+  String get gamificationHint => 'Medale, poziom i świętowanie';
+
+  @override
+  String get exerciseSettings => 'Ustawienia tego ćwiczenia';
+
+  @override
+  String get placeActiveNow => 'Jesteś tutaj';
+
+  @override
+  String get placeTapToUse => 'dotknij, by trenować tutaj';
+
+  @override
+  String get intervalDays => 'dni';
+
+  @override
+  String goalDaysShort(int done, int target) {
+    return '$done/$target dni';
+  }
+
+  @override
+  String get toolNameRpe => 'Ciężar wg RPE';
+
+  @override
+  String get toolTitleRpe => 'Ciężar wg RPE';
+
+  @override
+  String get toolDescRpe => 'Jaki ciężar na wybrany wysiłek';
+
+  @override
+  String get toolNameDots => 'Poziom siły';
+
+  @override
+  String get toolTitleDots => 'Poziom siły (DOTS)';
+
+  @override
+  String get toolDescDots => 'Twoja siła względem masy ciała';
+
+  @override
+  String rpeResultHint(int reps, String rpe) {
+    return 'Na $reps powt. przy RPE $rpe';
+  }
+
+  @override
+  String get rpeYourSet => 'Seria, którą właśnie zrobiłeś';
+
+  @override
+  String get rpeGoal => 'Co chcesz zrobić';
+
+  @override
+  String rpeOneRmLine(String value) {
+    return 'Szacowane 1RM: $value';
+  }
+
+  @override
+  String get rpeExplain => 'RPE 10 to brak siły na kolejne powtórzenie; 8 – zostały dwa.';
+
+  @override
+  String get dotsBestLifts => 'Twoje rekordy';
+
+  @override
+  String get dotsSquat => 'PRZYSIAD';
+
+  @override
+  String get dotsBench => 'WYCISKANIE NA ŁAWCE';
+
+  @override
+  String get dotsDeadlift => 'MARTWY CIĄG';
+
+  @override
+  String dotsTotalLine(String value) {
+    return 'Suma: $value';
+  }
+
+  @override
+  String get dotsExplain =>
+      'Porównuje twoją siłę z każdym, niezależnie od wagi. Użyj najlepszego pojedynczego powtórzenia albo szacowanego 1RM.';
+
+  @override
+  String get dotsLevel0 => 'Początkujący';
+
+  @override
+  String get dotsLevel1 => 'Średnio zaawansowany';
+
+  @override
+  String get dotsLevel2 => 'Zaawansowany';
+
+  @override
+  String get dotsLevel3 => 'Bardzo zaawansowany';
+
+  @override
+  String get dotsLevel4 => 'Elita';
+
+  @override
+  String get toolNameWilks => 'Wilks';
+
+  @override
+  String get toolTitleWilks => 'Punkty Wilksa';
+
+  @override
+  String get toolDescWilks => 'Klasyczna punktacja trójboju';
+
+  @override
+  String get wilksExplain =>
+      'Klasyczny wzór trójboju siłowego. W 2020 zastąpił go DOTS, ale wiele zawodów i rankingów nadal go używa.';
+
+  @override
+  String get toolNameFfmi => 'FFMI';
+
+  @override
+  String get toolTitleFfmi => 'Wskaźnik beztłuszczowej masy ciała';
+
+  @override
+  String get toolDescFfmi => 'Ile mięśni na twój wzrost';
+
+  @override
+  String get ffmiBodyFat => 'TKANKA TŁUSZCZOWA';
+
+  @override
+  String ffmiLeanLine(String value) {
+    return 'Beztłuszczowa masa ciała: $value';
+  }
+
+  @override
+  String get ffmiExplain =>
+      'Jak BMI, ale bez tłuszczu: liczy tylko beztłuszczową masę ciała. Skorygowany o wzrost, żeby uczciwie porównać wysokich i niskich.';
+
+  @override
+  String get ffmiLevel0 => 'Poniżej średniej';
+
+  @override
+  String get ffmiLevel1 => 'Średnio';
+
+  @override
+  String get ffmiLevel2 => 'Powyżej średniej';
+
+  @override
+  String get ffmiLevel3 => 'Doskonale';
+
+  @override
+  String get ffmiLevel4 => 'Wyjątkowo';
+
+  @override
+  String get rpeEffortLabel => 'Wysiłek (RPE)';
+
+  @override
+  String get restRowHint => 'Między seriami, chyba że ćwiczenie ma własną';
+
+  @override
+  String get effortRowHint => 'Zapisuj RPE lub RIR przy każdej serii';
+
+  @override
+  String get countdownHint => '3, 2, 1 przed pierwszą serią';
+
+  @override
+  String get keepScreenOnHint => 'Ekran nie gaśnie podczas treningu';
+
+  @override
+  String get demoSizeRowHint => 'Rysunek ćwiczenia podczas treningu';
+
+  @override
+  String get demoLoopRowHint => 'Czy animacja się powtarza, czy zatrzymuje';
+
+  @override
+  String get trainReminderRowHint => 'Przypomnienie w dni treningowe';
+
+  @override
+  String get alarmSoundRowHint => 'Co gra po końcu przerwy';
+
+  @override
+  String get alarmStyleRowHint => 'Czy dzwoni w trybie cichym';
+
+  @override
+  String get recommendedRowHint => 'Ćwiczenia proponowane na ekranie głównym';
+
+  @override
+  String get weightStepSetting => 'Krok ciężaru';
+
+  @override
+  String get weightStepHint => 'Ile dodają przyciski − i +';
+
+  @override
+  String get prBestWorkout => 'Najlepszy trening';
+
+  @override
+  String get mergeExercise => 'Scal';
+
+  @override
+  String mergeExerciseInto(String name) {
+    return 'Scal $name z…';
+  }
+
+  @override
+  String get mergeExerciseTitle => 'Scalić ćwiczenia?';
+
+  @override
+  String mergeExerciseBody(String from, String to) {
+    return 'Cała historia „$from” przejdzie do „$to”. „$from” zostaje w twojej bibliotece. Tego nie można cofnąć.';
+  }
+
+  @override
+  String get mergedToast => 'Historia scalona';
+
+  @override
+  String get nutrition => 'Odżywianie';
+
+  @override
+  String get nutritionHomeEmpty => 'Woda, białko i kalorie';
+
+  @override
+  String nutritionHomeDetail(String energy, int protein) {
+    return '$energy · $protein g białka';
+  }
+
+  @override
+  String get nutritionToday => 'Dziś';
+
+  @override
+  String get nutritionYesterday => 'Wczoraj';
+
+  @override
+  String get nutritionGoals => 'Cele dnia';
+
+  @override
+  String get kcalLabel => 'KALORIE';
+
+  @override
+  String get kcalOver => 'ponad';
+
+  @override
+  String get waterLabel => 'WODA';
+
+  @override
+  String get waterDone => 'Cel osiągnięty';
+
+  @override
+  String get waterCustom => 'Inna ilość';
+
+  @override
+  String get glassSize => 'Wielkość szklanki';
+
+  @override
+  String get supplementsLabel => 'SUPLEMENTY';
+
+  @override
+  String get supplementsEmpty => 'Dotknij, aby dodać, albo + dla własnego.';
+
+  @override
+  String get addSupplement => 'Nowy suplement';
+
+  @override
+  String get supplementNameHint => 'Kreatyna, witamina D…';
+
+  @override
+  String removeSupplementTitle(String name) {
+    return 'Usunąć $name?';
+  }
+
+  @override
+  String get removeSupplementBody => 'Dni, w które go odhaczyłeś, znikną razem z nim.';
+
+  @override
+  String get suppCreatine => 'Kreatyna';
+
+  @override
+  String get suppVitaminD => 'Witamina D';
+
+  @override
+  String get suppOmega3 => 'Omega-3';
+
+  @override
+  String get suppMagnesium => 'Magnez';
+
+  @override
+  String get suppMultivitamin => 'Multiwitamina';
+
+  @override
+  String get suppCaffeine => 'Kofeina';
+
+  @override
+  String get myFoods => 'Moje produkty';
+
+  @override
+  String get newFood => 'Nowy produkt';
+
+  @override
+  String get editFood => 'Edytuj produkt';
+
+  @override
+  String get foodNameHint => 'Odżywka białkowa, płatki owsiane, chleb…';
+
+  @override
+  String get servingLabel => 'PORCJA';
+
+  @override
+  String get servingHint => '1 miarka · 30 g';
+
+  @override
+  String get perServing => 'NA PORCJĘ';
+
+  @override
+  String get servingsLabel => 'Porcje';
+
+  @override
+  String get foodPhotoHint => 'Na jednolitym tle zamienia się w naklejkę.';
+
+  @override
+  String get cutoutWorking => 'Wycinanie…';
+
+  @override
+  String get cutoutTry => 'Wytnij';
+
+  @override
+  String get cutoutKeep => 'Całe zdjęcie';
+
+  @override
+  String deleteFoodTitle(String name) {
+    return 'Usunąć $name?';
+  }
+
+  @override
+  String get deleteFoodBody => 'Zniknie z twoich produktów. To, co już zapisałeś, zostaje.';
+
+  @override
+  String get mealBreakfast => 'Śniadanie';
+
+  @override
+  String get mealLunch => 'Obiad';
+
+  @override
+  String get mealDinner => 'Kolacja';
+
+  @override
+  String get mealSnacks => 'Przekąski';
+
+  @override
+  String get nothingLogged => 'Jeszcze nic nie zapisano.';
+
+  @override
+  String addToMeal(String meal) {
+    return 'Dodaj: $meal';
+  }
+
+  @override
+  String get quickAdd => 'Szybkie dodanie';
+
+  @override
+  String get quickAddHint => 'Same liczby, bez zapisywania produktu.';
+
+  @override
+  String get quickAddName => 'Co to było? (opcjonalnie)';
+
+  @override
+  String get logFood => 'Dodaj';
+
+  @override
+  String loggedToast(String meal) {
+    return 'Dodano: $meal';
+  }
+
+  @override
+  String get entryRemoved => 'Usunięto';
+
+  @override
+  String get goalsFromProfile => 'Oblicz z mojego profilu';
+
+  @override
+  String get goalsFromProfileHint => 'Kalorie z twojego profilu, 1,8 g białka i 35 ml wody na kg masy ciała.';
+
+  @override
+  String get kcalEaten => 'Zjedzone';
+
+  @override
+  String get kcalRemaining => 'Zostało';
+
+  @override
+  String waterTapHint(String amount) {
+    return 'Dotknij szklanki: + $amount';
+  }
+
+  @override
+  String get shakeEmpty => 'Dotknij, aby wybrać swój shake';
+
+  @override
+  String shakeTapHint(String name) {
+    return 'Dotknij: + $name';
+  }
+
+  @override
+  String get shakePick => 'Twój shake';
+
+  @override
+  String get shakePickHint => 'Dotknij szklanki i zapisze się za jednym razem.';
+
+  @override
+  String get proteinLetter => 'B';
+
+  @override
+  String get carbsLetter => 'W';
+
+  @override
+  String get fatLetter => 'T';
+
+  @override
+  String get addBurnedLabel => 'Dodaj spalone kalorie';
+
+  @override
+  String get addBurnedHint => 'Spalone kalorie liczone są z czasu treningu i masy ciała.';
+
+  @override
+  String get amountLabel => 'Ilość';
+
+  @override
+  String amountIn(String unit) {
+    return 'Ilość ($unit)';
+  }
+
+  @override
+  String get bodyweightLabel => 'Waga';
+
+  @override
+  String copiedMealToast(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Skopiowano $count produktów',
+      few: 'Skopiowano $count produkty',
+      one: 'Skopiowano 1 produkt',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get deleteSavedMealBody => 'To, co już zapisałeś, zostaje bez zmian.';
+
+  @override
+  String get fiberLabel => 'Błonnik';
+
+  @override
+  String get sugarLabel => 'Cukier';
+
+  @override
+  String get sodiumLabel => 'Sód';
+
+  @override
+  String get foodDatabase => 'Baza produktów';
+
+  @override
+  String get kcalBurned => 'Spalone';
+
+  @override
+  String get mealOptions => 'Opcje posiłku';
+
+  @override
+  String get moreNutrients => 'Błonnik, cukier i sód';
+
+  @override
+  String ofGoal(int goal, String unit) {
+    return 'z $goal $unit';
+  }
+
+  @override
+  String per100(String unit) {
+    return 'na 100 $unit';
+  }
+
+  @override
+  String get perServingShort => 'na porcję';
+
+  @override
+  String get foodCategory => 'CATEGORY';
+
+  @override
+  String portionUnit(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count sztuk',
+      few: '$count sztuki',
+      one: '1 sztuka',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portionSlice(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count plastrów',
+      few: '$count plastry',
+      one: '1 plaster',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portionScoop(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count miarek',
+      few: '$count miarki',
+      one: '1 miarka',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portionTbsp(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count łyżek',
+      few: '$count łyżki',
+      one: '1 łyżka',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portionTsp(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count łyżeczek',
+      few: '$count łyżeczki',
+      one: '1 łyżeczka',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portionCup(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count kubków',
+      few: '$count kubki',
+      one: '1 kubek',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String portionGlass(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count szklanek',
+      few: '$count szklanki',
+      one: '1 szklanka',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recentFoods => 'Ostatnie';
+
+  @override
+  String recipeItems(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count produktów',
+      few: '$count produkty',
+      one: '1 produkt',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get renameLabel => 'Zmień nazwę';
+
+  @override
+  String get repeatFrom => 'Powtórz z';
+
+  @override
+  String get repeatNone => 'W inne dni nic jeszcze nie zapisano w tym posiłku.';
+
+  @override
+  String get restDayGoals => 'Inne cele w dni odpoczynku';
+
+  @override
+  String get trainingDays => 'Dni treningowe';
+
+  @override
+  String get restDays => 'Dni odpoczynku';
+
+  @override
+  String get trainingDay => 'Dzień treningowy';
+
+  @override
+  String get saveAsMeal => 'Zapisz jako posiłek';
+
+  @override
+  String get savedMealNameHint => 'np. Zwykłe śniadanie';
+
+  @override
+  String get savedMealToast => 'Posiłek zapisany';
+
+  @override
+  String get savedMeals => 'Zapisane posiłki';
+
+  @override
+  String get searchFoodsHint => 'Szukaj produktów';
+
+  @override
+  String get searchFoodsEmpty => 'Szukaj wśród ponad 500 produktów ze zdjęciem albo dodaj własne.';
+
+  @override
+  String searchFoodsNone(String query) {
+    return 'Nic dla „$query”. Dodaj to jako własny produkt.';
+  }
+
+  @override
+  String get servingWeight => 'GRAMY';
+
+  @override
+  String get weekAverage => 'Ten tydzień';
+
+  @override
+  String get weekAvgEnergy => 'Średnio dziennie';
+
+  @override
+  String get weekAvgProtein => 'Białko dziennie';
+
+  @override
+  String get weekEnergyOnTarget => 'Kalorie w celu';
+
+  @override
+  String get weekProteinOnTarget => 'Białko w celu';
+
+  @override
+  String weekProteinAvg(int grams) {
+    return '$grams g białka dziennie';
+  }
+
+  @override
+  String weekDaysOnTarget(int met, int days) {
+    return '$met z $days dni w celu';
+  }
+
+  @override
+  String weekLoggedDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count dni zapisanych',
+      few: '$count dni zapisane',
+      one: '1 dzień zapisany',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get weekNoData => 'Jeszcze nic nie zapisano';
+
+  @override
+  String get weekOnTargetHint => 'W celu: kalorie w granicach 10 % celu i co najmniej 90 % białka.';
+
+  @override
+  String get weightGoalLabel => 'Waga docelowa';
+
+  @override
+  String weightGoalTitle(String unit) {
+    return 'Waga docelowa ($unit)';
+  }
+
+  @override
+  String weightGoalLine(String weight) {
+    return 'Cel $weight';
+  }
+
+  @override
+  String get weightGoalNone => 'Przytrzymaj, aby ustawić cel';
+
+  @override
+  String get weightGoalReached => 'Cel osiągnięty';
+
+  @override
+  String weightToLose(String weight) {
+    return '$weight do zrzucenia';
+  }
+
+  @override
+  String weightToGain(String weight) {
+    return '$weight do przybrania';
+  }
+
+  @override
+  String get aminoHis => 'histydyna';
+
+  @override
+  String get aminoIle => 'izoleucyna';
+
+  @override
+  String get aminoLeu => 'leucyna';
+
+  @override
+  String get aminoLys => 'lizyna';
+
+  @override
+  String get aminoSaa => 'metionina';
+
+  @override
+  String get aminoAaa => 'fenyloalanina';
+
+  @override
+  String get aminoThr => 'treonina';
+
+  @override
+  String get aminoTrp => 'tryptofan';
+
+  @override
+  String get aminoVal => 'walina';
+
+  @override
+  String get animalProtein => 'Białko zwierzęce';
+
+  @override
+  String get proteinQuality => 'Jakość białka';
+
+  @override
+  String get qualityComplete => 'Pełne';
+
+  @override
+  String get qualityAlmost => 'Prawie pełne';
+
+  @override
+  String get qualityIncomplete => 'Niepełne';
+
+  @override
+  String get qualityNoData => 'Brak danych';
+
+  @override
+  String get qualityNoDataHint => 'Zapisuj produkty z bazy, aby zobaczyć swoje aminokwasy.';
+
+  @override
+  String get qualityAllCovered => 'Pokrywasz wszystkie dziewięć aminokwasów egzogennych.';
+
+  @override
+  String qualityLimiting(String amino) {
+    return 'Brakuje ci: $amino. Połącz z produktami, które jej dużo mają.';
+  }
+
+  @override
+  String qualityCoverage(int pct) {
+    return 'Liczone na $pct % twojego białka: własne produkty nie mają danych o aminokwasach.';
+  }
+
+  @override
+  String get fatTypes => 'Rodzaje tłuszczów';
+
+  @override
+  String get fatSaturated => 'Nasycone';
+
+  @override
+  String get fatMono => 'Jednonienas.';
+
+  @override
+  String get fatPoly => 'Wielonienas.';
+
+  @override
+  String satLimitLine(String grams, int limit) {
+    return 'Nasycone $grams g z maks. $limit g (10 % kalorii)';
+  }
+
+  @override
+  String get sugarSodium => 'Cukier i sód';
+
+  @override
+  String get shakeCard => 'Shake białkowy';
+
+  @override
+  String get mealOther => 'Posiłek';
+
+  @override
+  String get mealAdd => 'Dodaj posiłek';
+
+  @override
+  String get mealAddHint => 'np. Przed treningiem';
+
+  @override
+  String get mealsOfDay => 'Posiłki dnia';
+
+  @override
+  String get mealsHint => 'Twórz ile chcesz. Usunięcie posiłku przenosi jego zawartość do tego wyżej.';
+
+  @override
+  String get trackersTitle => 'Dostosuj';
+
+  @override
+  String get trackersHint => 'Zostaw tylko to, co chcesz śledzić.';
+
+  @override
+  String get trackersDaily => 'Podsumowanie dnia';
+
+  @override
+  String get trackersDetail => 'Szczegóły';
+
+  @override
+  String get trackersCards => 'Karty';
+
+  @override
+  String get prepTitle => 'Meal prep';
+
+  @override
+  String get prepNewShort => 'Nowa partia';
+
+  @override
+  String get prepNew => 'Nowa partia';
+
+  @override
+  String get prepEdit => 'Edytuj partię';
+
+  @override
+  String get prepHint => 'Zapisz cały garnek raz i jedz go po kawałku.';
+
+  @override
+  String get prepEmpty =>
+      'Gotowałeś na kilka dni? Zapisz raz, a potem podawaj tylko, ile zjadłeś z tego, co zostało.';
+
+  @override
+  String get prepNameHint => 'np. Kurczak z ryżem';
+
+  @override
+  String get prepDefaultName => 'Partia';
+
+  @override
+  String get prepIngredients => 'Składniki';
+
+  @override
+  String get prepAddIngredient => 'Dodaj składnik';
+
+  @override
+  String get prepCookedWeight => 'WAGA PO UGOTOWANIU';
+
+  @override
+  String prepCookedHint(String grams) {
+    return 'Zważ garnek po ugotowaniu, żeby liczby były dokładne. Puste = łączna waga surowa ($grams g).';
+  }
+
+  @override
+  String get prepNeedWeight => 'Podaj wagę po ugotowaniu: niektóre składniki nie mają gramów.';
+
+  @override
+  String prepLeftOf(String left, String total) {
+    return 'Zostało $left z $total';
+  }
+
+  @override
+  String get prepOfWhatsLeft => '% tego, co zostało';
+
+  @override
+  String get prepAll => 'Wszystko';
+
+  @override
+  String prepLogAmount(String grams) {
+    return 'Zapisz $grams';
+  }
+
+  @override
+  String get prepWeighLeft => 'Zważ resztę';
+
+  @override
+  String get prepFinished => 'Ta partia się skończyła.';
+
+  @override
+  String get approxValues => 'Przybliżone';
+
+  @override
+  String get editValues => 'Edytuj wartości';
+
+  @override
+  String get editValuesHint =>
+      'Zmienia tylko ten wpis. Aby poprawić produkt na przyszłość, edytuj go w Moich produktach.';
+
+  @override
+  String get editLibraryHint => 'Zapisze się jako twój produkt, z tym samym zdjęciem';
+
+  @override
+  String per100Line(String energy, String unit) {
+    return '$energy na 100 $unit';
+  }
+
+  @override
+  String get rawLabel => 'Surowe';
+
+  @override
+  String get cookedLabel => 'Ugotowane';
+
+  @override
+  String get rawHint => 'Waga przed gotowaniem';
+
+  @override
+  String cookedHint(String factor) {
+    return 'Waga po ugotowaniu (×$factor wagi surowej)';
+  }
+
+  @override
+  String get servingsUnit => 'porcje';
+
+  @override
+  String logAmount(String energy) {
+    return 'Zapisz · $energy';
+  }
+
+  @override
+  String get catFruit => 'Owoce';
+
+  @override
+  String get catVeg => 'Warzywa';
+
+  @override
+  String get catMeat => 'Mięso';
+
+  @override
+  String get catFish => 'Ryby';
+
+  @override
+  String get catEgg => 'Jajka';
+
+  @override
+  String get catDairy => 'Nabiał';
+
+  @override
+  String get catGrain => 'Zboża';
+
+  @override
+  String get catBakery => 'Pieczywo';
+
+  @override
+  String get catLegume => 'Strączki';
+
+  @override
+  String get catNut => 'Orzechy';
+
+  @override
+  String get catOil => 'Oleje';
+
+  @override
+  String get catPantry => 'Spiżarnia';
+
+  @override
+  String get catDrink => 'Napoje';
+
+  @override
+  String get catSauce => 'Sosy';
+
+  @override
+  String get catSpice => 'Przyprawy';
+
+  @override
+  String get searchFoodsPrompt => 'Co zjadłeś?';
+
+  @override
+  String get shelfEmpty =>
+      'Wyszukaj produkt albo zrób zdjęcie swojego: tu pojawią się te, które zapisujesz najczęściej.';
+
+  @override
+  String get repeatEntry => 'Powtórz';
+
+  @override
+  String get notifSuppChannel => 'Suplementy';
+
+  @override
+  String get notifSuppChannelWhy => 'Codzienne przypomnienie o suplementach';
+
+  @override
+  String get energySplit => 'Skąd pochodzą kalorie';
+
+  @override
+  String get typicalServing => 'Typowa porcja';
+
+  @override
+  String cookedYieldLine(String factor) {
+    return 'Waży $factor× tyle co na surowo';
+  }
+
+  @override
+  String get readyDishes => 'Dishes';
+
+  @override
+  String weightLastLine(String weight) {
+    return 'Last weigh-in $weight';
+  }
+
+  @override
+  String get proteinAnimalShort => 'Animal';
+
+  @override
+  String get proteinPlantShort => 'Plant';
+
+  @override
+  String kcalFromMacros(String value) {
+    return 'These macros add up to about $value';
+  }
+
+  @override
+  String get useValue => 'Use';
+
+  @override
+  String get suppRowHint => 'Tap to mark · hold for details';
+
+  @override
+  String get suppPhoto => 'Photo';
+
+  @override
+  String get suppDose => 'Dose';
+
+  @override
+  String get suppDoseHint => '5 g, 2 capsules…';
+
+  @override
+  String get suppRemind => 'Remind me';
+
+  @override
+  String mealPlanDefault(int n) {
+    return 'Plan $n';
+  }
+
+  @override
+  String get mealPlansTitle => 'Meal plans';
+
+  @override
+  String get mealPlanNew => 'New plan';
+
+  @override
+  String fromPlan(String name) {
+    return 'From $name';
+  }
+
+  @override
+  String get logPlan => 'Log';
+
+  @override
+  String get planFromDay => 'Copy this day';
+
+  @override
+  String get planNewHint => 'Plan your days like your routines, then log a whole meal with one tap.';
+
+  @override
+  String get planLogDay => 'Log the empty meals';
+
+  @override
+  String planLogged(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n foods logged',
+      one: '1 food logged',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get planNoPlan => 'No plan';
+
+  @override
+  String get planWeekHint => 'Tap a day to give it a plan.';
+
+  @override
+  String get planDuplicate => 'Duplicate';
+
+  @override
+  String planDeleteTitle(String name) {
+    return 'Delete $name?';
+  }
+
+  @override
+  String get planDeleteBody => 'Twoje rutyny zostają. Usuwany jest tylko ten zapisany tydzień.';
+
+  @override
+  String get sectionBeta => 'Beta';
+
+  @override
+  String get nutritionBeta => 'Odżywianie';
+
+  @override
+  String get nutritionBetaHint => 'Posiłki, woda i suplementy';
+
+  @override
+  String get nutritionAboutTitle => 'O odżywianiu';
+
+  @override
+  String get nutritionAboutSub => 'Czym jest i czym nigdy nie będzie.';
+
+  @override
+  String get nutritionAboutWhatTitle => 'Część twojego treningu';
+
+  @override
+  String get nutritionAboutWhat =>
+      'Prosty sposób na zapisywanie posiłków, wody, białka i suplementów tuż obok treningów. GymMane to przede wszystkim aplikacja na siłownię: odżywianie jest po to, żebyś miał wszystko w jednym miejscu, a nie żeby zastąpić aplikację dietetyczną.';
+
+  @override
+  String get nutritionAboutScanTitle => 'Bez skanera, nigdy';
+
+  @override
+  String get nutritionAboutScan =>
+      'Zeskanowanie kodu kreskowego i automatyczne uzupełnienie wszystkiego byłoby wygodne. Ale wymaga to internetu i ogromnej internetowej bazy produktów, a to, co jesz, trafia na cudze serwery. Te dane pokazują, kiedy jesz, co jesz i jak dbasz o swoje ciało, i mogą zostać użyte do reklam albo trafić do dużych firm. Dlatego nie ma skanera i nie będzie.';
+
+  @override
+  String get nutritionAboutLocalTitle => 'Wszystko w twoim telefonie';
+
+  @override
+  String get nutritionAboutLocal =>
+      'Aplikacja zawiera ponad 500 produktów ze zdjęciami. Możesz dodawać własne, zmieniać ich zdjęcia i edytować wartości. Wszystko zostaje w twoim telefonie, jak cała reszta GymMane.';
+
+  @override
+  String get nutritionAboutBetaTitle => 'Wciąż w becie';
+
+  @override
+  String get nutritionAboutBeta =>
+      'Jeśli czegoś ci brakuje, zaproponuj to na GitHubie. Tylko nie skaner ani większa baza produktów: poza twoją prywatnością aplikacja byłaby dużo cięższa. Nie potrzebujesz odżywiania? Wyłącz je w Ustawieniach, a twoje dane zostaną.';
+
+  @override
+  String get nutritionAboutSuggest => 'Zaproponuj pomysł';
+
+  @override
+  String get nutritionAboutOk => 'Rozumiem';
+
+  @override
+  String get planShare => 'Share';
+
+  @override
+  String get planImport => 'Import a plan';
+
+  @override
+  String planImported(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n plans imported',
+      one: '1 plan imported',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get planImportNone => 'That file has no meal plans.';
+
+  @override
+  String get planMoveUp => 'Move up';
+
+  @override
+  String get planMoveDown => 'Move down';
+
+  @override
+  String get cutoutEdit => 'Touch up cutout';
+
+  @override
+  String get cutoutEditHint =>
+      'Drag to erase or restore. Tap an area to remove or bring it back whole. Pinch to zoom.';
+
+  @override
+  String get cutoutErase => 'Erase';
+
+  @override
+  String get cutoutRestore => 'Restore';
+
+  @override
+  String get cutoutReset => 'Back to automatic';
+
+  @override
+  String get cutoutByHand => 'Cut out by hand';
+
+  @override
+  String notifSuppTitleFor(String names) {
+    return 'Time to take: $names';
+  }
+
+  @override
+  String get notifSuppTap => 'Tick it off in GymMane once you\'ve taken it.';
+
+  @override
+  String get suppNoneToday => 'Nothing to take today.';
+
+  @override
+  String get suppOtherDays => 'Other days';
+
+  @override
+  String suppEveryN(int n) {
+    String _temp0 = intl.Intl.pluralLogic(n, locale: localeName, other: 'Every $n days', one: 'Every day');
+    return '$_temp0';
+  }
+
+  @override
+  String get suppDaily => 'Every day';
+
+  @override
+  String suppFromDate(String date) {
+    return 'from $date';
+  }
+
+  @override
+  String suppUntilDate(String date) {
+    return 'until $date';
+  }
+
+  @override
+  String get suppSomeDays => 'Some days';
+
+  @override
+  String get suppEveryShort => 'Every X days';
+
+  @override
+  String get suppWhen => 'When';
+
+  @override
+  String get suppEveryLead => 'Every';
+
+  @override
+  String suppEveryTail(int n) {
+    String _temp0 = intl.Intl.pluralLogic(n, locale: localeName, other: 'days', one: 'day');
+    return '$_temp0';
+  }
+
+  @override
+  String get suppStarts => 'Starts';
+
+  @override
+  String get suppEnds => 'Ends';
+
+  @override
+  String get suppTomorrow => 'Tomorrow';
+
+  @override
+  String get suppPickDate => 'Pick a date';
+
+  @override
+  String get suppNever => 'Never';
+
+  @override
+  String get suppOneWeek => 'In 1 week';
+
+  @override
+  String get suppOneMonth => 'In 1 month';
+
+  @override
+  String get planPickHint => 'Pick the plan for this day, or make a new one.';
+
+  @override
+  String planSetForDay(String day) {
+    return 'Plan set for $day';
+  }
+
+  @override
+  String get planSaved => 'Plan saved';
+
+  @override
+  String get planDiscardTitle => 'Discard changes?';
+
+  @override
+  String get planDiscardBody => 'What you changed won\'t be saved.';
+
+  @override
+  String get planDiscard => 'Discard';
+
+  @override
+  String get planEdit => 'Edit plan';
+
+  @override
+  String get planNameHint => 'Lato, podróż…';
+
+  @override
+  String get planDaysQuestion => 'Which days?';
+
+  @override
+  String get planDaysHint => 'On those days it shows up in Nutrition so you can log it in one tap.';
+
+  @override
+  String get planDaysNone => 'Pick at least one day, or it won\'t show up anywhere.';
+
+  @override
+  String get planNothingToLog => 'Those meals are already logged';
+
+  @override
+  String get planSave => 'Save plan';
+
+  @override
+  String get planToday => 'Today\'s plan';
+
+  @override
+  String get planLogRest => 'Log the rest';
+
+  @override
+  String get dishNew => 'Create my dish';
+
+  @override
+  String get dishNewHint => 'Pick ingredients and amounts, save it and log it in one tap.';
+
+  @override
+  String get dishEdit => 'Edit dish';
+
+  @override
+  String get dishNameHint => 'E.g. Mum\'s lentils';
+
+  @override
+  String get dishIngredients => 'Ingredients';
+
+  @override
+  String get dishEmptyHint => 'Add what goes in it with the amount you usually eat.';
+
+  @override
+  String get dishSave => 'Save dish';
+
+  @override
+  String get dishNeedsName => 'Give it a name';
+
+  @override
+  String get dishNeedsItems => 'Add at least one ingredient';
+
+  @override
+  String get suppHistory => 'Last 14 days';
+
+  @override
+  String suppTakenOf(int n, int total) {
+    return '$n of $total taken';
+  }
+
+  @override
+  String get suppNoReminder => 'No reminder';
+
+  @override
+  String get suppMarkTaken => 'Mark as taken';
+
+  @override
+  String get suppUnmark => 'Unmark';
+
+  @override
+  String get suppEdit => 'Edit';
+
+  @override
+  String get mealMoveTo => 'Move to';
+
+  @override
+  String get mealClear => 'Clear meal';
+
+  @override
+  String get mealCleared => 'Meal cleared';
+
+  @override
+  String movedMealToast(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count foods moved',
+      one: '1 food moved',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get repeatWholeDay => 'Repeat the whole day';
+
+  @override
+  String createFoodNamed(String name) {
+    return 'Create “$name”';
+  }
+
+  @override
+  String get entryDay => 'Day';
+
+  @override
+  String get movedToDay => 'Moved';
+
+  @override
+  String get favFoodsHint => 'Tap ☆ on a food';
+
+  @override
+  String get favFoodsEmpty => 'Tap the star on any food to keep it here, one tap away.';
+
+  @override
+  String savedMealsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count meals', one: '1 meal');
+    return '$_temp0';
+  }
+
+  @override
+  String get savedMealsEmpty => 'Save a meal from its ••• menu, or build your own dish.';
+
+  @override
+  String get sugarLimitLabel => 'Sugar limit';
+
+  @override
+  String get sodiumLimitLabel => 'Sodium limit';
+
+  @override
+  String get waterOptions => 'Water options';
+
+  @override
+  String get waterNone => 'No water logged yet.';
+
+  @override
+  String get waterDailyGoal => 'Daily water';
+
+  @override
+  String get trackersScreen => 'Screen';
+
+  @override
+  String get vesselMotion => 'Moving water and shake';
+
+  @override
+  String get vesselMotionHint =>
+      'Turn it off if the screen feels slow: the glasses still fill up, they just stop moving.';
+
+  @override
+  String get planFixedWeek => 'Stały tydzień';
+
+  @override
+  String get planRotation => 'Rotacja';
+
+  @override
+  String get rotationTitle => 'ROTACJA';
+
+  @override
+  String get rotationHint => 'Następny jest ten po ostatnim treningu, bez względu na dzień.';
+
+  @override
+  String get rotationEmpty => 'Dodaj rutyny w kolejności, w jakiej je zrobisz: A, B, C…';
+
+  @override
+  String rotationProgress(int done, int total) {
+    return '$done z $total zrobione w tej rundzie';
+  }
+
+  @override
+  String get rotationNext => 'Następny';
+
+  @override
+  String get rotationAdd => 'Dodaj rutyny';
+
+  @override
+  String get rotationPickHint => 'Trafiają w kolejności, w jakiej je dotkniesz.';
+
+  @override
+  String get rotationSkip => 'Przejdź do następnej';
+
+  @override
+  String get rotationRestart => 'Nowa runda';
+
+  @override
+  String get rotationMakeNext => 'Ustaw jako następną';
+
+  @override
+  String get rotationRemove => 'Usuń z rotacji';
+
+  @override
+  String rotationPlace(int n, int total) {
+    return '$n z $total w rotacji';
+  }
+
+  @override
+  String get moveToDay => 'Przenieś na inny dzień';
+
+  @override
+  String get moveToDayHint => 'Tylko tym razem; plan tygodniowy się nie zmienia.';
+
+  @override
+  String get movedToast => 'Trening przeniesiony';
+
+  @override
+  String get backToPlan => 'Wróć do planu tygodnia';
+
+  @override
+  String get tomorrow => 'Jutro';
+
+  @override
+  String get untrainedTab => 'Pominięte';
+
+  @override
+  String get untrainedRecent => 'Niedawno';
+
+  @override
+  String get untrainedLong => 'Dawno';
+
+  @override
+  String untrainedWaiting(String list) {
+    return 'Najdłużej czekają: $list';
+  }
+
+  @override
+  String get untrainedAllRecent => 'Każdy mięsień pracował w tym tygodniu. Super.';
+
+  @override
+  String trainedAgo(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n dnia temu',
+      many: '$n dni temu',
+      few: '$n dni temu',
+      one: 'Trenowany wczoraj',
+      zero: 'Trenowany dziś',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get neverTrained => 'Jeszcze nietrenowany';
+
+  @override
+  String get layoutSetting => 'Widok treningu';
+
+  @override
+  String get layoutCards => 'Karty';
+
+  @override
+  String get layoutList => 'Lista';
+
+  @override
+  String get layoutHint =>
+      'Karty pokazują jedno ćwiczenie naraz. Lista pokazuje cały trening na jednym ekranie, seria po serii.';
+
+  @override
+  String get layoutRowHint => 'Jedno ćwiczenie naraz lub wszystko jako lista';
+
+  @override
+  String get previousCol => 'POPRZ.';
+
+  @override
+  String get usePrevious => 'Użyj wartości z ostatniego razu';
+
+  @override
+  String get skipShort => 'Pomiń';
+
+  @override
+  String get moveUp => 'Przesuń w górę';
+
+  @override
+  String get moveDown => 'Przesuń w dół';
+
+  @override
+  String get widgetNutritionOff => 'Turn on Nutrition in Settings › Beta to use this widget.';
+
+  @override
+  String get widgetPickShake => 'Pick your shake';
+
+  @override
+  String get heatRangeSetting => 'Kalendarz aktywności';
+
+  @override
+  String get heatRangeWeeks => '12 tygodni';
+
+  @override
+  String get heatRangeYear => '12 miesięcy';
+
+  @override
+  String get heatRangeHint =>
+      '12 miesięcy pokazuje cały rok. Przesuń w bok, aby cofnąć się aż do pierwszego treningu.';
+
+  @override
+  String get pdfPlan => 'Plan jako PDF';
+
+  @override
+  String get pdfPlanHint => 'Przejrzysty arkusz z tygodniem i każdą rutyną, gotowy do druku lub wysłania.';
+
+  @override
+  String get pdfExport => 'Eksportuj do PDF';
+
+  @override
+  String get pdfFooter => 'Darmowa, open source i offline';
+
+  @override
+  String get shakeTag => 'It’s a shake';
+
+  @override
+  String get shakeTagHint => 'It shows up in Your shake';
+
+  @override
+  String get shakeNone => 'Mark your shakes and only those show up here.';
+
+  @override
+  String get shakeMarkLabel => 'MARK AS A SHAKE';
+
+  @override
+  String get shakeNew => 'New shake';
+
+  @override
+  String get shakeUntag => 'Not a shake';
+
+  @override
+  String get pdfKicker => 'PLAN TRENINGOWY';
+
+  @override
+  String get pdfStatDays => 'DNI / TYDZ.';
+
+  @override
+  String get pdfStatMinutes => 'MIN / TRENING';
+
+  @override
+  String pdfMinutes(int n) {
+    return '≈ $n min';
+  }
+
+  @override
+  String get workoutNotesTitle => 'Notatki do ćwiczenia';
+
+  @override
+  String get workoutNoteEvery => 'Za każdym razem';
+
+  @override
+  String get workoutNoteNext => 'Następnym razem';
+
+  @override
+  String get workoutNoteEveryHint =>
+      'Widać ją przy każdym podejściu do ćwiczenia. Dobra na ustawienia siedziska lub wyciągu.';
+
+  @override
+  String get workoutNoteNextHint => 'Pojawi się tylko następnym razem, potem zniknie.';
+
+  @override
+  String workoutNoteFromLast(String date) {
+    return 'Z ostatniego razu · $date';
+  }
+
+  @override
+  String get workoutNoteHint => 'Siedzisko na otworze 2, wyciąg na 19…';
+
+  @override
+  String get notePinWorkout => 'Pokazuj podczas treningu';
+
+  @override
+  String get assistedSetting => 'Maszyna z asystą';
+
+  @override
+  String get assistedSettingHint =>
+      'Ciężar ci pomaga, więc mniej znaczy lepiej: rekordy i sugestie idą w dół.';
+
+  @override
+  String get assistedRecordHint => 'Najmniej pomocy';
+
+  @override
+  String get trainAgainLabel => 'Jeszcze bez treningu? Przypomnij ponownie';
+
+  @override
+  String get trainAgainOff => 'Nie';
+
+  @override
+  String trainAgainAfter(int n) {
+    return '+$n godz.';
+  }
+
+  @override
+  String get trainAgainHint => 'Tylko raz i tylko wtedy, gdy tego dnia nie zapisałeś treningu.';
+
+  @override
+  String get notifTrainAgainBody => 'Wciąż zdążysz dziś potrenować.';
+
+  @override
+  String nextDeload(int n) {
+    return 'lżej: $n treningi z rzędu bez wszystkich powtórzeń';
+  }
+
+  @override
+  String get historyTitle => 'Historia';
+
+  @override
+  String historyWorkouts(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n TRENINGU',
+      many: '$n TRENINGÓW',
+      few: '$n TRENINGI',
+      one: '1 TRENING',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get historyEmpty => 'Brak treningów w tym miesiącu';
+
+  @override
+  String get historyEmptyHint => 'Przesuń w bok lub użyj strzałek, aby zobaczyć inne miesiące.';
+
+  @override
+  String historyMore(int n) {
+    return '+$n więcej';
+  }
+
+  @override
+  String get stopwatch => 'Stoper';
+
+  @override
+  String get proteinSource => 'Protein source';
+
+  @override
+  String get proteinMixedShort => 'Mixed';
+
+  @override
+  String get kcalActive => 'aktywne';
+
+  @override
+  String get kcalEstimated => 'szacunkowo';
+
+  @override
+  String get kcalYours => 'twoja wartość';
+
+  @override
+  String kcalTotalRest(String value) {
+    return '$value łącznie, z tym, co spalasz w spoczynku';
+  }
+
+  @override
+  String get inclineLabel => 'Nachylenie';
+
+  @override
+  String get kcalUseOwn => 'Użyj mojej wartości';
+
+  @override
+  String get kcalBackToEstimate => 'Wróć do szacunku';
+
+  @override
+  String get kcalNeedsData => 'Dodaj dystans i czas, aby oszacować kalorie';
+
+  @override
+  String get kcalHowEstimated =>
+      'Oszacowane na podstawie dystansu, czasu, nachylenia i twojej wagi (wzór ACSM).';
+
+  @override
+  String get kcalOwnTitle => 'Aktywne kalorie';
+
+  @override
+  String get planMine => 'Mój plan';
+
+  @override
+  String get planNew => 'Nowy plan';
+
+  @override
+  String get planSaveWeek => 'Zapisz ten tydzień';
+
+  @override
+  String get planSaveWeekHint => 'Zachowaj obecny tydzień jako plan, do którego wrócisz';
+
+  @override
+  String get planEmptyWeek => 'Zacznij pusty tydzień';
+
+  @override
+  String get planEmptyWeekHint => 'Obecny tydzień zostaje zapisany jako plan';
+
+  @override
+  String get planName => 'Nazwa planu';
+
+  @override
+  String get planRename => 'Zmień nazwę';
+
+  @override
+  String get planDelete => 'Usuń plan';
+
+  @override
+  String get plansHint => 'Zmiany w tygodniu zapisują się w wybranym planie';
+
+  @override
+  String get progression => 'Progresja';
+
+  @override
+  String get progManual => 'Ręcznie';
+
+  @override
+  String get progManualHint => 'Bez podpowiedzi: sam wybierasz każdy ciężar.';
+
+  @override
+  String get progLinear => 'Liniowa';
+
+  @override
+  String get progLinearHint => 'Zrób wszystkie powtórzenia, a ciężar wzrośnie.';
+
+  @override
+  String get progDouble => 'Podwójna progresja';
+
+  @override
+  String get progDoubleHint => 'Więcej powtórzeń do górnej granicy zakresu, potem większy ciężar.';
+
+  @override
+  String get progVolume => 'Powtórzenia, serie i ciężar';
+
+  @override
+  String get progVolumeHint =>
+      'Powtórzenia do górnej granicy, potem jedna seria więcej, potem większy ciężar.';
+
+  @override
+  String get progAmrap => 'Ostatnia seria na maksa';
+
+  @override
+  String get progAmrapHint =>
+      'Ostatnia seria: tyle powtórzeń, ile dasz radę. Podwój cel, a skok będzie podwójny.';
+
+  @override
+  String get progStep => 'Skok ciężaru';
+
+  @override
+  String get progRange => 'Zakres powtórzeń';
+
+  @override
+  String get progSets => 'Serie';
+
+  @override
+  String get progDeload => 'Lżej po';
+
+  @override
+  String progFails(int n) {
+    String _temp0 = intl.Intl.pluralLogic(n, locale: localeName, other: '$n porażkach', one: '1 porażce');
+    return '$_temp0';
+  }
+
+  @override
+  String get progDeloadPct => 'Zmniejsz o';
+
+  @override
+  String get progApply => 'Wypełnij następny trening';
+
+  @override
+  String get progApplyHint => 'Wyłączone: tylko jako podpowiedź.';
+
+  @override
+  String get nextMoreReps => 'ten sam ciężar, jedno powtórzenie więcej';
+
+  @override
+  String get nextAddSet => 'jedna seria więcej';
+
+  @override
+  String get nextAmrap => 'ostatnia seria: ile dasz radę';
+
+  @override
+  String fillDay(String amount) {
+    return 'Fill your day · $amount';
+  }
+
+  @override
+  String leftAfterKcal(String kcal) {
+    return 'You\'ll have $kcal left';
+  }
+
+  @override
+  String leftAfterBoth(String kcal, String grams) {
+    return 'You\'ll have $kcal and $grams g protein left';
+  }
+
+  @override
+  String leftAfterOver(String kcal) {
+    return '$kcal over your goal';
+  }
+
+  @override
+  String perDayUnit(String unit) {
+    return '$unit a day';
+  }
+
+  @override
+  String get byZone => 'Według partii';
+
+  @override
+  String get importAlreadyHave => 'Masz już te plany. Możesz dodać je ponownie jako kopię.';
+
+  @override
+  String get importAsCopy => 'Dodaj jako kopię';
+
+  @override
+  String get importOwned => 'Już masz';
+
+  @override
+  String get setDuplicated => 'Seria zduplikowana';
+
+  @override
+  String get setTypeCluster => 'Cluster';
+
+  @override
+  String get setTypeClusterInfo =>
+      'Seria podzielona na małe bloki z 15–30 sekundami przerwy. Zapisz łączną liczbę powtórzeń.';
+
+  @override
+  String timesBodyweight(String value) {
+    return '$value× twojej masy ciała';
+  }
+
+  @override
+  String get archiveRoutine => 'Archiwizuj plan';
+
+  @override
+  String get routineArchived => 'Plan zarchiwizowany';
+
+  @override
+  String get archivedRoutines => 'Zarchiwizowane';
+
+  @override
+  String get autoBackup => 'Automatyczna kopia';
+
+  @override
+  String get autoBackupHint =>
+      'Zapisuje ZIP ze wszystkimi danymi w wybranym folderze. Zsynchronizuj ten folder z Nextcloud, Syncthing lub inną aplikacją, aby mieć kopię poza telefonem.';
+
+  @override
+  String get autoBackupFolder => 'Wybierz folder';
+
+  @override
+  String get autoBackupNoFolder => 'Brak folderu';
+
+  @override
+  String get autoBackupOff => 'Wyłączona';
+
+  @override
+  String get autoBackupWorkout => 'Po każdym treningu';
+
+  @override
+  String get autoBackupDaily => 'Raz dziennie';
+
+  @override
+  String get autoBackupWeekly => 'Raz w tygodniu';
+
+  @override
+  String get autoBackupOnLeave => 'Po wyjściu z aplikacji';
+
+  @override
+  String get autoBackupKeep => 'Kopie do zachowania';
+
+  @override
+  String get autoBackupNow => 'Zrób kopię teraz';
+
+  @override
+  String autoBackupLast(String when) {
+    return 'Ostatnia kopia $when';
+  }
+
+  @override
+  String get autoBackupNever => 'Brak kopii';
+
+  @override
+  String get autoBackupLost => 'Nie udało się zapisać ostatniej kopii. Wybierz folder ponownie.';
+
+  @override
+  String get autoBackupSaved => 'Kopia zapisana';
+
+  @override
+  String get prepPortions => 'Porcje';
+
+  @override
+  String get rotationAddRest => 'Dodaj dzień odpoczynku';
+
+  @override
+  String get rotationRestHint => 'Mija sam następnego dnia';
+
+  @override
+  String get rotationRestToday => 'Dziś';
+
+  @override
+  String get rotationSkipRest => 'Pomiń ten odpoczynek';
+
+  @override
+  String rotationRestUpNext(String name) {
+    return 'Potem: $name';
+  }
+
+  @override
+  String get trainAnyway => 'Trenuj mimo to';
+
+  @override
+  String get healthTitle => 'Zdrowie';
+
+  @override
+  String get healthSetting => 'Dane zdrowotne';
+
+  @override
+  String get healthSettingHint => 'Dane z Health Connect w Postępach';
+
+  @override
+  String get healthPickTitle => 'Dane zdrowotne';
+
+  @override
+  String get healthPickHint =>
+      'Wybierz, co pobrać z Health Connect. Android pyta raz o każdą pozycję. Dane są tylko odczytywane i nigdy nie opuszczają telefonu.';
+
+  @override
+  String get healthGroupHeart => 'Serce';
+
+  @override
+  String get healthGroupVitals => 'Parametry życiowe';
+
+  @override
+  String get healthGroupActivity => 'Aktywność';
+
+  @override
+  String get healthRestingHr => 'Tętno spoczynkowe';
+
+  @override
+  String get healthHeartRate => 'Średnie tętno';
+
+  @override
+  String get healthHrv => 'Zmienność rytmu serca';
+
+  @override
+  String get healthSpo2 => 'Natlenienie krwi';
+
+  @override
+  String get healthRespiration => 'Częstość oddechów';
+
+  @override
+  String get healthBloodPressure => 'Ciśnienie krwi';
+
+  @override
+  String get healthTemperature => 'Temperatura ciała';
+
+  @override
+  String get healthSleep => 'Sen';
+
+  @override
+  String get healthDistance => 'Dystans';
+
+  @override
+  String get healthFloors => 'Pokonane piętra';
+
+  @override
+  String get healthElevation => 'Przewyższenie';
+
+  @override
+  String get healthActiveKcal => 'Aktywne kalorie';
+
+  @override
+  String get healthNoData => 'Brak danych';
+
+  @override
+  String get healthReadFailed => 'Nie udało się odczytać';
+
+  @override
+  String get healthAllow => 'Dotknij, aby zezwolić';
+
+  @override
+  String get healthLast7 => 'Ostatnie 7 dni';
+
+  @override
+  String get healthAvg30 => 'Średnia 30 dni';
+
+  @override
+  String get healthLow => 'Najniższe';
+
+  @override
+  String get healthHigh => 'Najwyższe';
+
+  @override
+  String get healthFrom => 'Z Health Connect · ostatnie 30 dni';
+
+  @override
+  String get healthBpm => 'uderz./min';
+
+  @override
+  String get healthBreaths => 'oddech./min';
+
+  @override
+  String get weekTab => 'Tydzień';
+
+  @override
+  String get muscleSetsList => 'Serie na mięsień';
+
+  @override
+  String get fatTrans => 'Trans';
+
+  @override
+  String get fatTypesHint => 'Opcjonalne. Zostaw puste to, czego nie ma na etykiecie.';
+
+  @override
+  String get sessionPhotos => 'Zdjęcia z treningu';
+
+  @override
+  String get sessionPhotosAdd => 'Dodaj zdjęcia';
+
+  @override
+  String get sessionPhotosHint => 'Trafiają też do Twoich zdjęć.';
+
+  @override
+  String get ladderTitle => 'Progresja';
+
+  @override
+  String get ladderHint =>
+      'Ułóż kroki od najłatwiejszego do najtrudniejszego. Gdy zrobisz 3 serie po 8 dwa treningi z rzędu (5 w wolnych), GymMane zaproponuje następny.';
+
+  @override
+  String get ladderBuiltIn =>
+      'Bazuje na progresji aplikacji. Dodaj, usuń lub przestaw kroki, a stanie się progresją tej rutyny.';
+
+  @override
+  String get ladderNone => 'Jeszcze brak. Dotknij, aby utworzyć.';
+
+  @override
+  String ladderStep(int n, int total) {
+    return 'Krok $n z $total';
+  }
+
+  @override
+  String get ladderAdd => 'Dodaj krok';
+
+  @override
+  String get ladderInRoutine => 'W rutynie';
+
+  @override
+  String get ladderClear => 'Użyj tej z aplikacji';
+
+  @override
+  String get ladderPick => 'Wybierz krok';
+
+  @override
+  String get periodWeek => 'w tym tygodniu';
+
+  @override
+  String get periodMonth => 'w tym miesiącu';
+
+  @override
+  String get periodYear => 'w tym roku';
+
+  @override
+  String get periodAll => 'od początku';
+
+  @override
+  String get settingsSearch => 'Szukaj w ustawieniach';
+
+  @override
+  String get settingsNoResults => 'Brak ustawienia o tej nazwie';
+
+  @override
+  String get settingsGroupApp => 'Twoja aplikacja';
+
+  @override
+  String get settingsGroupHome => 'Start i dodatki';
+
+  @override
+  String get settingsGroupData => 'Dane i pomoc';
+
+  @override
+  String get healthAllowAll => 'Włącz wszystko';
+
+  @override
+  String get healthSeeAll => 'Zobacz wszystko';
+
+  @override
+  String get healthPinTitle => 'Na karcie';
+
+  @override
+  String get healthPinHint => 'Wybierz do 3 na kartę Postępów.';
+
+  @override
+  String get blurSetting => 'Efekty rozmycia';
+
+  @override
+  String get blurSettingHint => 'Wyłącz, jeśli telefon zwalnia';
+
+  @override
+  String get lowEndTitle => 'Twój telefon ma mało pamięci';
+
+  @override
+  String get lowEndBody =>
+      'Bez rozmycia wszystko działa płynniej. Możesz je przywrócić w Ustawienia → Ogólne.';
+
+  @override
+  String get lowEndOff => 'Wyłącz rozmycie';
+
+  @override
+  String get lowEndKeep => 'Zostaw';
+
+  @override
+  String get momentsThisMonth => 'W tym miesiącu';
+
+  @override
+  String get momentsDays => 'Dni ze zdjęciem';
+
+  @override
+  String get awardsPick => 'Wybierz do profilu';
+
+  @override
+  String get awardsPickHint => 'Dotknij tych, które chcesz w profilu';
+
+  @override
+  String get gymPassPicture => 'Zapisz zdjęcie kodu';
+
+  @override
+  String get gymPassPictureHint =>
+      'Dla kodów, których aplikacja nie odczyta: pokazuje zdjęcie przy pełnej jasności';
+
+  @override
+  String get gymPassPictureFormat => 'Zdjęcie';
+
+  @override
+  String get gymPassUsePicture => 'Zapisz zdjęcie';
+
+  @override
+  String get gymPassChangePicture => 'Zmień zdjęcie';
+
+  @override
+  String get cropTitle => 'Przytnij kod';
+
+  @override
+  String get cropHint => 'Przeciągnij rogi, aby został tylko kod';
+
+  @override
+  String get rotatePhoto => 'Obróć';
+
+  @override
+  String get cardioNoSets => 'Cardio nie wlicza się do tygodniowych serii na mięsień';
+
+  @override
+  String get countsAsWater => 'Counts toward water';
+
+  @override
+  String get countsAsWaterHint => 'For shakes made with water: logging it adds to your water too';
+
+  @override
+  String get waterPerServing => 'Water per serving';
+
+  @override
+  String get estOneRm => 'szacowany 1RM';
+
+  @override
+  String get newInWorkout => 'Nowe w tym treningu';
+
+  @override
+  String newInWorkoutHint(String routine) {
+    return 'Dodaj je do $routine z seriami, które właśnie zrobiłeś. Reszta planu się nie zmienia.';
+  }
+
+  @override
+  String get addedToRoutine => 'Dodano';
+
+  @override
+  String get addShort => 'Dodaj';
+
+  @override
+  String get allTimeLifted => 'PODNIESIONE';
+
+  @override
+  String get pctBodyweight => '% masy ciała';
+
+  @override
+  String get ofBodyweight => 'twojej masy ciała';
+
+  @override
+  String get recoveryStateMid => 'Regeneruje się';
+
+  @override
+  String get recoveryStateReady => 'Gotowy';
+
+  @override
+  String recoveringIn(String time) {
+    return 'Regeneracja za $time';
+  }
+
+  @override
+  String readyIn(String time) {
+    return 'Gotowy za $time';
+  }
+
+  @override
+  String get recoveryReadyNow => 'Gotowy do kolejnego treningu';
+
+  @override
+  String get restAfterThisSet => 'Przerwa po tej serii';
+
+  @override
+  String restUsual(String time) {
+    return 'Zwykle: $time';
+  }
+
+  @override
+  String get restJustToday => 'Tylko dla tej serii, dziś';
+
+  @override
+  String get restUseUsual => 'Wróć do zwykłej przerwy';
+
+  @override
+  String get restChange => 'Zmień';
+
+  @override
+  String get noRestTimer => 'Bez minutnika';
+
+  @override
+  String get sessionMuscles => 'Mięśnie w tym treningu';
+
+  @override
+  String get sessionMusclesHint =>
+      'Blade jeszcze przed tobą, jaskrawe zrobione. Serie na mięsień, pomocnicze liczą się w połowie.';
+
+  @override
+  String get miniBodySetting => 'Mała mapa mięśni przy planach';
+
+  @override
+  String get miniBodySettingHint => 'Mięśnie każdej rutyny';
+
+  @override
+  String get balanceTitle => 'Równowaga siły';
+
+  @override
+  String get balanceWhy => 'Jak to działa';
+
+  @override
+  String get balanceGood => 'Twoje podstawowe ćwiczenia są w równowadze';
+
+  @override
+  String balanceBehind(String lift, String gap) {
+    return '$lift odstaje: brakuje ok. $gap';
+  }
+
+  @override
+  String get balanceHint =>
+      'Porównuje twoje szacowane 1RM z ostatnich 4 miesięcy z klasycznymi proporcjami: przysiad 100%, martwy ciąg 120%, wyciskanie leżąc 75%, wiosłowanie 52%, wyciskanie nad głowę 45%. Ćwiczenie dużo poniżej reszty to zwykle słaby punkt.';
+
+  @override
+  String get balanceEven => 'W równowadze';
+
+  @override
+  String get balanceBehindShort => 'Z tyłu';
+
+  @override
+  String get balanceAheadShort => 'Z przodu';
+
+  @override
+  String get holdProgress => 'Progresja czasem';
+
+  @override
+  String get holdProgressHint => 'Dodaje sekundy, gdy wytrzymasz każdą serię';
+
+  @override
+  String holdProgressOn(int s) {
+    return '+$s s za każdym razem, gdy wytrzymasz każdą serię';
+  }
+
+  @override
+  String get paceTitle => 'Tempo tygodniowe';
+
+  @override
+  String get paceOn => 'Dobre tempo';
+
+  @override
+  String get paceTooFast => 'Szybciej niż twój zakres';
+
+  @override
+  String get paceTooSlow => 'Wolniej niż twój zakres';
+
+  @override
+  String get paceWrongWay => 'W przeciwną stronę';
+
+  @override
+  String get paceDrifting => 'Waha się bardziej, niż pozwala utrzymanie';
+
+  @override
+  String get paceSetAim => 'Dotknij, aby wybrać cel';
+
+  @override
+  String get paceBasis => 'Trend twoich ważeń z ostatnich 3 tygodni, żeby słona kolacja cię nie zmyliła.';
+
+  @override
+  String get paceAimTitle => 'Jaki masz cel?';
+
+  @override
+  String get paceAimHint => 'Karta powie, czy tempo pasuje';
+
+  @override
+  String get paceLose => 'Schudnąć';
+
+  @override
+  String get paceHold => 'Utrzymać';
+
+  @override
+  String get paceGain => 'Przytyć';
+
+  @override
+  String get paceAuto => 'Automatycznie';
+
+  @override
+  String get paceLoseRange => '0,5–1% masy ciała tygodniowo';
+
+  @override
+  String get paceHoldRange => 'W granicach 0,25% tygodniowo';
+
+  @override
+  String get paceGainRange => '0,25–0,5% masy ciała tygodniowo';
+
+  @override
+  String get paceAutoHint => 'Z twojej docelowej wagi';
+
+  @override
+  String get weekShort => 'tydz.';
+
+  @override
+  String get weightStack => 'Stos ciężarów';
+
+  @override
+  String get weightStackHint =>
+      'Ciężary, które ta maszyna ma naprawdę. + i −, progresja i rozładowania trafiają tylko w nie.';
+
+  @override
+  String get weightStackOff => 'Wyłączony: zwykłe skoki';
+
+  @override
+  String get stackFrom => 'Od';
+
+  @override
+  String get stackTo => 'Do';
+
+  @override
+  String get stackEvery => 'Co';
+
+  @override
+  String get stackFill => 'Wypełnij stos';
+
+  @override
+  String get stackTapToFix => 'Dotknij ciężaru, aby poprawić nietypowy lub go usunąć.';
+
+  @override
+  String get stackAddWeight => 'Dodaj ciężar';
+
+  @override
+  String get stackEditWeight => 'Ciężar na bolcu';
+
+  @override
+  String get stackClear => 'Usuń stos';
+
+  @override
+  String stackCount(int n) {
+    return '$n ciężarów';
+  }
+
+  @override
+  String get healthLinksTitle => 'Z twoimi treningami';
+
+  @override
+  String get healthLinkHeart => 'Tętno z zegarka';
+
+  @override
+  String get healthLinkHeartHint => 'Średnie i maksymalne tętno każdego treningu, z dowolnego zegarka';
+
+  @override
+  String get healthLinkWeight => 'Ważenia z innych aplikacji';
+
+  @override
+  String get healthLinkWeightHint =>
+      'Ważenia z twojej wagi z ostatnich 30 dni. Nigdy nie nadpisuje tego, co wpisałeś.';
+
+  @override
+  String get healthLinkDenied => 'Health Connect nie dało uprawnień';
+
+  @override
+  String get healthOpenSettings => 'Otwórz';
+
+  @override
+  String hrMaxShort(int bpm) {
+    return 'maks. $bpm';
+  }
+
+  @override
+  String get setNote => 'Notatka do tej serii';
+
+  @override
+  String get setNoteHint => 'Chwyt, ból, wskazówka, która zadziałała…';
+
+  @override
+  String setNoteLast(String note) {
+    return 'Ostatnio: $note';
+  }
+
+  @override
+  String get lastTimeNotes => 'Ostatnio';
+
+  @override
+  String setNoteLine(int n, String note) {
+    return 'Seria $n · $note';
+  }
+
+  @override
+  String get newMeasure => 'Nowy pomiar';
+
+  @override
+  String get newMeasureHint => 'Co chcesz śledzić: nadgarstek, tętno spoczynkowe, wodę w ciele…';
+
+  @override
+  String get measureKindLength => 'Długość';
+
+  @override
+  String get measureKindLengthHint => 'W cm lub calach, jak pozostałe';
+
+  @override
+  String get measureKindOther => 'Inny';
+
+  @override
+  String get measureKindOtherHint => 'Z własną jednostką';
+
+  @override
+  String get measureUnit => 'Jednostka';
+
+  @override
+  String get measureUnitHint => 'mm, bpm, kg…';
+
+  @override
+  String get measureNameHint => 'Nadgarstek, tętno spoczynkowe…';
+
+  @override
+  String get measureRename => 'Zmień nazwę';
+
+  @override
+  String measureDeleteTitle(String name) {
+    return 'Usunąć $name?';
+  }
+
+  @override
+  String get measureDeleteBody => 'Wszystkie zapisane wartości też znikną.';
+
+  @override
+  String get measureDelete => 'Usuń ten pomiar';
+
+  @override
+  String get measureEvery => 'Przypominaj o mierzeniu';
+
+  @override
+  String measureNextIn(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: 'Za $n dni',
+      one: 'Jutro',
+      zero: 'Dziś',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get measureDueNow => 'Czas się zmierzyć';
+
+  @override
+  String get notifMeasureChannel => 'Pomiary ciała';
+
+  @override
+  String get notifMeasureChannelWhy => 'Przypomnienie, gdy czas znów się zmierzyć.';
+
+  @override
+  String get notifMeasureTitle => 'Czas się zmierzyć';
+
+  @override
+  String notifMeasureBody(int n) {
+    return '$n dni od ostatniego razu. To samo miejsce, ta sama pora dnia.';
+  }
+
+  @override
+  String get healthLinkWrite => 'Zapisuj treningi';
+
+  @override
+  String get healthLinkWriteHint =>
+      'Każdy ukończony trening trafia do Health Connect z godziną i rodzajem, żeby inne aplikacje też go liczyły. Wysyła też ostatnie 30 dni.';
+
+  @override
+  String get healthWorkoutTitle => 'Trening';
+
+  @override
+  String get circuits => 'Obwody na czas';
+
+  @override
+  String get circuitsHint => 'Praca i przerwa na zegarze, runda po rundzie';
+
+  @override
+  String get newCircuit => 'Nowy obwód';
+
+  @override
+  String get editCircuit => 'Edytuj obwód';
+
+  @override
+  String get circuitDefaultName => 'Obwód';
+
+  @override
+  String get circuitNameHint => 'Nazwa, np. Finisher brzucha';
+
+  @override
+  String get circuitRounds => 'Rundy';
+
+  @override
+  String get circuitRoundRest => 'Przerwa między rundami';
+
+  @override
+  String get circuitWork => 'Praca';
+
+  @override
+  String get circuitRest => 'Przerwa';
+
+  @override
+  String get circuitAdd => 'Dodaj ćwiczenie';
+
+  @override
+  String get circuitEmpty =>
+      'Dodaj ćwiczenia w kolejności wykonywania. Jedno może być dwa razy, np. deska boczna na każdą stronę.';
+
+  @override
+  String circuitSummary(int steps, int rounds, String time) {
+    String _temp0 = intl.Intl.pluralLogic(
+      steps,
+      locale: localeName,
+      other: '$steps ćwiczeń',
+      few: '$steps ćwiczenia',
+      one: '1 ćwiczenie',
+    );
+    String _temp1 = intl.Intl.pluralLogic(
+      rounds,
+      locale: localeName,
+      other: '$rounds rund',
+      few: '$rounds rundy',
+      one: '1 runda',
+    );
+    return '$_temp0 · $_temp1 · $time';
+  }
+
+  @override
+  String get circuitStart => 'Start';
+
+  @override
+  String get circuitGetReady => 'Przygotuj się';
+
+  @override
+  String circuitRoundOf(int n, int total) {
+    return 'Runda $n z $total';
+  }
+
+  @override
+  String circuitNext(String name) {
+    return 'Następne: $name';
+  }
+
+  @override
+  String get circuitFinishLine => 'Ostatnie i koniec';
+
+  @override
+  String get circuitDone => 'Obwód zrobiony';
+
+  @override
+  String circuitDoneBody(String time) {
+    return '$time · zapisano w historii';
+  }
+
+  @override
+  String get circuitStopTitle => 'Zatrzymać obwód?';
+
+  @override
+  String get circuitStopBody => 'To, co już zrobiłeś, zapisze się w historii.';
+
+  @override
+  String get circuitStop => 'Zatrzymaj';
+
+  @override
+  String get circuitKeepGoing => 'Dalej';
+
+  @override
+  String circuitDeleteTitle(String name) {
+    return 'Usunąć $name?';
+  }
+
+  @override
+  String get circuitDeleteBody => 'Treningi zrobione z nim zostają w historii.';
+
+  @override
+  String get circuitPickExercise => 'Wybierz ćwiczenie';
+
+  @override
+  String get circuitNoSteps => 'Dodaj co najmniej jedno ćwiczenie';
+
+  @override
+  String get circuitPrevious => 'Poprzednie';
+
+  @override
+  String get circuitUpNext => 'Teraz';
+
+  @override
+  String get foodGroupNew => 'New category';
+
+  @override
+  String get foodGroupHint => 'Ready meals, frozen…';
+
+  @override
+  String foodGroupCount(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n foods',
+      one: '1 food',
+      zero: 'No foods yet',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String foodGroupDeleteTitle(String name) {
+    return 'Delete $name?';
+  }
+
+  @override
+  String get foodGroupDeleteBody => 'Your foods stay, just without this category.';
+
+  @override
+  String onbHello(String name) {
+    return 'Cześć, $name';
+  }
+
+  @override
+  String get onbPlaceHero => 'ćwiczeń do zrobienia';
+
+  @override
+  String get settingsRests => 'Przerwy';
+
+  @override
+  String get settingsDuring => 'Podczas treningu';
+
+  @override
+  String get settingsLook => 'Wygląd';
+
+  @override
+  String get importCardTitle => 'Przenieś tu swoje treningi';
+
+  @override
+  String get importCardBody => 'Z Hevy, Strong, FitNotes i innych';
+
+  @override
+  String get checkInTitle => 'Jak się czułeś?';
+
+  @override
+  String get checkInSleep => 'Sen';
+
+  @override
+  String get checkInEnergy => 'Energia';
+
+  @override
+  String get checkInSkip => 'Opcjonalne';
+
+  @override
+  String get checkInLevel1 => 'Fatalnie';
+
+  @override
+  String get checkInLevel2 => 'Słabo';
+
+  @override
+  String get checkInLevel3 => 'W porządku';
+
+  @override
+  String get checkInLevel4 => 'Dobrze';
+
+  @override
+  String get checkInLevel5 => 'Świetnie';
+
+  @override
+  String get checkInSetting => 'Sen i energia';
+
+  @override
+  String get checkInSettingHint => 'Pytaj po każdym treningu';
+
+  @override
+  String get readinessTitle => 'Sen i energia';
+
+  @override
+  String get readinessWaiting => 'Oceniaj dalej treningi';
+
+  @override
+  String get readinessWaitingHint =>
+      'Po kilku dobrych i złych dniach zobaczysz, jak zmieniają twoje ciężary.';
+
+  @override
+  String readinessSleepLess(int n) {
+    return 'W dni z krótkim snem podnosisz o $n% mniej';
+  }
+
+  @override
+  String readinessSleepMore(int n) {
+    return 'Ciekawe: w dni z krótkim snem podnosisz o $n% więcej';
+  }
+
+  @override
+  String get readinessSleepNone => 'Sen prawie nie zmienia twoich ciężarów';
+
+  @override
+  String readinessEnergyLess(int n) {
+    return 'W dni z małą energią podnosisz o $n% mniej';
+  }
+
+  @override
+  String readinessEnergyMore(int n) {
+    return 'W dni z małą energią i tak podnosisz o $n% więcej';
+  }
+
+  @override
+  String get readinessEnergyNone => 'Energia prawie nie zmienia twoich ciężarów';
+
+  @override
+  String get readinessHint => 'Porównuje każde szacowane 1RM z twoim najlepszym z poprzednich 90 dni.';
+
+  @override
+  String get readinessLast30 => 'Średnia z ostatnich 30 dni';
+
+  @override
+  String get kindSport => 'Sport';
+
+  @override
+  String get clearWorkouts => 'Usuń tylko treningi';
+
+  @override
+  String get clearWorkoutsNone => 'Nie ma treningów do usunięcia';
+
+  @override
+  String clearWorkoutsTitle(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: 'Usunąć $n treningu?',
+      many: 'Usunąć $n treningów?',
+      few: 'Usunąć $n treningi?',
+      one: 'Usunąć 1 trening?',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get clearWorkoutsBody =>
+      'Znikną historia, rekordy i medale. Zostaną plany, ćwiczenia, zdjęcia, pomiary, odżywianie i ustawienia. Najpierw wyeksportuj kopię, jeśli możesz chcieć je odzyskać.';
+
+  @override
+  String get clearWorkoutsConfirm => 'Usuń treningi';
+
+  @override
+  String get clearWorkoutsDone => 'Treningi usunięte';
+
+  @override
+  String get reportTitle => 'Raport';
+
+  @override
+  String get reportHint => 'Wybierz daty i udostępnij jako PDF lub CSV';
+
+  @override
+  String get reportCustom => 'Inne';
+
+  @override
+  String get reportPickRange => 'Wybierz daty';
+
+  @override
+  String get reportEmpty => 'Nic nie zapisano między tymi datami.';
+
+  @override
+  String get reportKicker => 'RAPORT TRENINGOWY';
+
+  @override
+  String reportDays(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n dnia',
+      many: '$n dni',
+      few: '$n dni',
+      one: '1 dzień',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get reportWorkouts => 'TRENINGI';
+
+  @override
+  String get reportPerWeek => 'NA TYDZIEŃ';
+
+  @override
+  String get reportHours => 'GODZINY';
+
+  @override
+  String get reportVsPrev => 'Procenty porównują z tą samą liczbą dni tuż przed.';
+
+  @override
+  String get reportRecords => 'Nowe rekordy';
+
+  @override
+  String get reportLifts => 'Ćwiczenia';
+
+  @override
+  String get reportSessionsCol => 'DNI';
+
+  @override
+  String get reportBestCol => 'NAJLEPSZE 1RM';
+
+  @override
+  String get reportChangeCol => 'ZMIANA';
+
+  @override
+  String get reportBestHint =>
+      'Najlepsze 1RM jest szacowane z twoich serii. Zmiana porównuje pierwszy i ostatni dzień ćwiczenia w tym raporcie.';
+
+  @override
+  String get reportMuscles => 'Serie na mięsień';
+
+  @override
+  String get reportBody => 'Ciało i regeneracja';
+
+  @override
+  String reportFood(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: 'Odżywianie · średnia z $n dnia',
+      many: 'Odżywianie · średnia z $n dni',
+      few: 'Odżywianie · średnia z $n dni',
+      one: 'Odżywianie · średnia z 1 dnia',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String reportRecordsLine(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n nowego rekordu',
+      many: '$n nowych rekordów',
+      few: '$n nowe rekordy',
+      one: '1 nowy rekord',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String reportLiftsLine(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n ćwiczenia',
+      many: '$n ćwiczeń',
+      few: '$n ćwiczenia',
+      one: '1 ćwiczenie',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String reportFoodLine(String kcal, int protein, int days) {
+    return '$kcal i $protein g białka dziennie · zapisane dni: $days';
+  }
+
+  @override
+  String get reportSharePdf => 'Udostępnij PDF';
+
+  @override
+  String get reportShareCsv => 'Eksportuj CSV';
+
+  @override
+  String get reportShareCsvBoth => 'Eksportuj CSV (treningi i odżywianie)';
+
+  @override
+  String fastMinutes(int n) {
+    return '$n min';
+  }
+
+  @override
+  String fastHours(int n) {
+    return '$n h';
+  }
+
+  @override
+  String fastHoursMinutes(int h, int m) {
+    return '$h h $m min';
+  }
+
+  @override
+  String get fastTracker => 'Intermittent fasting';
+
+  @override
+  String fastTitle(int fast, int eat) {
+    return 'Fasting $fast:$eat';
+  }
+
+  @override
+  String get fastOptions => 'Fasting options';
+
+  @override
+  String get fastWindowOpen => 'Eating window open';
+
+  @override
+  String get fastLeft => 'Left';
+
+  @override
+  String get fastDoneLabel => 'Goal reached';
+
+  @override
+  String get fastIdle => 'Start it after your last meal';
+
+  @override
+  String fastLast(String time) {
+    return 'Last fast: $time';
+  }
+
+  @override
+  String fastStreak(int n) {
+    return '$n in a row';
+  }
+
+  @override
+  String fastReached(String time) {
+    return '$time past your goal';
+  }
+
+  @override
+  String fastEndsAt(String time) {
+    return 'Ends at $time';
+  }
+
+  @override
+  String fastSince(String time) {
+    return 'Since $time';
+  }
+
+  @override
+  String get fastStartedAt => 'When did you start fasting?';
+
+  @override
+  String get fastStart => 'Start fast';
+
+  @override
+  String fastFromMeal(String time) {
+    return 'From $time';
+  }
+
+  @override
+  String get fastEnd => 'End fast';
+
+  @override
+  String get fastCancel => 'Cancel this fast';
+
+  @override
+  String get fastPlan => 'Fasting plan';
+
+  @override
+  String get fastPlanHint => 'Hours fasting : hours to eat';
+
+  @override
+  String get fastThisWeek => 'Last 7 days';
+
+  @override
+  String get fastCount => 'Fasts';
+
+  @override
+  String get fastReachedCount => 'Reached';
+
+  @override
+  String get fastAverage => 'Average';
+
+  @override
+  String get fastHistory => 'Recent fasts';
+
+  @override
+  String get notifFastLiveChannel => 'Fasting in progress';
+
+  @override
+  String get notifFastLiveChannelWhy => 'A quiet countdown while you fast.';
+
+  @override
+  String get notifFastChannel => 'Fasting';
+
+  @override
+  String get notifFastChannelWhy => 'Tells you when your fast is done.';
+
+  @override
+  String get notifFastLiveTitle => 'Fasting';
+
+  @override
+  String notifFastLiveBody(String time) {
+    return 'Your eating window opens at $time';
+  }
+
+  @override
+  String get notifFastDoneTitle => 'Fast done';
+
+  @override
+  String notifFastDoneBody(int n) {
+    return '$n hours. Your eating window is open.';
+  }
+
+  @override
+  String get newExerciseHint => 'Wymagana jest tylko nazwa. Reszta pomaga, ale możesz dodać ją później.';
+
+  @override
+  String get supportThanksTitle => 'Dzięki, że tu jesteś 🤍';
+
+  @override
+  String get supportThanksBody =>
+      'GymMane jest darmowy i zawsze będzie, bez reklam i bez haczyków.\n\nJeśli pomaga ci trenować, postawienie mi kawy poprawi mi dzień ☕\nA jeśli nie możesz, nic nie szkodzi: gwiazdka na GitHubie też ⭐';
+
+  @override
+  String get perfSetting => 'Performance';
+
+  @override
+  String get perfSheetHint => 'How much of your phone GymMane uses. You can change each part below.';
+
+  @override
+  String get perfLite => 'Saver';
+
+  @override
+  String get perfLiteHint => 'No blur and calmer motion. For phones that struggle.';
+
+  @override
+  String get perfBalanced => 'Balanced';
+
+  @override
+  String get perfBalancedHint => 'Blur and animations without draining the battery.';
+
+  @override
+  String get perfMax => 'Maximum';
+
+  @override
+  String perfMaxHint(int hz) {
+    return 'Finer blur and the screen at $hz Hz. For high-end phones.';
+  }
+
+  @override
+  String get perfMaxHintNoHz => 'Finer blur everywhere. For high-end phones.';
+
+  @override
+  String get perfCustom => 'Custom';
+
+  @override
+  String get perfTweak => 'Fine-tuning';
+
+  @override
+  String get perfFine => 'Fine blur';
+
+  @override
+  String get perfFineHint => 'Softer edges and a sharper backdrop behind sheets';
+
+  @override
+  String perfHz(int hz) {
+    return 'Screen at $hz Hz';
+  }
+
+  @override
+  String get perfHzHint => 'Everything scrolls smoother, at a little more battery';
+
+  @override
+  String get lowEndLiteBody =>
+      'Saver mode (no blur, calmer motion) will run smoother on it. You can change it in Settings → General → Performance.';
+
+  @override
+  String get lowEndLiteOn => 'Turn on Saver';
+
+  @override
+  String get dayOffHint => 'Your streak and the reminder leave this day alone';
+
+  @override
+  String get dayOffTrained => 'I trained, just didn\'t log it';
+
+  @override
+  String get dayOffSick => 'Illness';
+
+  @override
+  String get dayOffTravel => 'Travel';
+
+  @override
+  String get dayOffInjury => 'Injury';
+
+  @override
+  String get dayOffRest => 'Rest';
+
+  @override
+  String get altsTitle => 'Backups';
+
+  @override
+  String get altsHint => 'In case the machine is taken';
+
+  @override
+  String altsPickHint(int count) {
+    return 'Pick up to $count. If the machine is taken, swap in one tap.';
+  }
+
+  @override
+  String get placeDumbbells => 'Dumbbells';
+
+  @override
+  String get dumbbellsHint =>
+      'The weight of one dumbbell. Progression and the + and − buttons will only land on these here.';
+
+  @override
+  String get dumbbellOther => 'Another weight';
+
+  @override
+  String get tuneTitle => 'Today\'s volume';
+
+  @override
+  String get tuneHint => 'Tell me how each muscle felt and I\'ll adjust the sets for next time.';
+
+  @override
+  String get tuneLess => 'Too little';
+
+  @override
+  String get tuneRight => 'Right';
+
+  @override
+  String get tuneMore => 'Too much';
+
+  @override
+  String tuneNext(String sets, String name) {
+    return 'Next time: $sets of $name';
+  }
+
+  @override
+  String get tuneSame => 'Stays the same next time';
+
+  @override
+  String get tuneSetting => 'Tune sets per muscle';
+
+  @override
+  String get tuneSettingHint => 'After a routine, rate each muscle and the sets adjust';
+
+  @override
+  String insightLoad(int pct) {
+    return '$pct % more sets than your usual week. Watch your recovery.';
+  }
+
+  @override
+  String insightMuscle(String muscle, int days) {
+    return '$muscle: $days days untouched.';
+  }
+
+  @override
+  String insightPushHeavy(int a, int b) {
+    return 'You push more than you pull: $a sets against $b in four weeks.';
+  }
+
+  @override
+  String insightPullHeavy(int a, int b) {
+    return 'You pull more than you push: $a sets against $b in four weeks.';
+  }
+
+  @override
+  String insightStronger(String name, int pct) {
+    return '$name: $pct % stronger than last month.';
+  }
+
+  @override
+  String recapPull(String month) {
+    return 'Ciągnij dalej, aby zobaczyć swój $month';
+  }
+
+  @override
+  String get recapRelease => 'Puść';
+
+  @override
+  String recapHi(String name) {
+    return 'Cześć, $name';
+  }
+
+  @override
+  String recapReady(String month) {
+    return 'Zobaczymy Twój $month?';
+  }
+
+  @override
+  String get recapGo => 'Zaczynamy';
+
+  @override
+  String recapEmpty(String month) {
+    return 'Brak treningów: $month. Pierwszy wszystko odblokuje.';
+  }
+
+  @override
+  String get recapClose => 'Zamknij';
+
+  @override
+  String get recapShare => 'Udostępnij';
+
+  @override
+  String get recapWorkoutsKicker => 'W tym miesiącu masz';
+
+  @override
+  String recapWorkouts(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: 'treningu',
+      many: 'treningów',
+      few: 'treningi',
+      one: 'trening',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recapDays(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: 'W $n różnych dni',
+      many: 'W $n różnych dni',
+      few: 'W $n różne dni',
+      one: 'Jednego dnia',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recapTimeKicker => 'Czas pod sztangą';
+
+  @override
+  String recapLongest(String time, String date) {
+    return 'Najdłuższa sesja: $time, $date';
+  }
+
+  @override
+  String get recapVolumeKicker => 'Przerzuciłeś';
+
+  @override
+  String recapCars(int n, String count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: 'Jak podnieść $count samochodu',
+      many: 'Jak podnieść $count samochodów',
+      few: 'Jak podnieść $count samochody',
+      one: 'Jak podnieść samochód',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recapTop(String name, String volume) {
+    return 'Najwięcej: $name, $volume';
+  }
+
+  @override
+  String get recapMuscleKicker => 'Mięsień miesiąca';
+
+  @override
+  String get recapRecordsKicker => 'Nowe rekordy';
+
+  @override
+  String recapNoRecords(int n) {
+    return 'Tym razem bez rekordów, ale serie na koncie: $n.';
+  }
+
+  @override
+  String get recapHabitKicker => 'Twoja pora';
+
+  @override
+  String recapHabitStart(String time) {
+    return 'Zwykle zaczynasz o $time';
+  }
+
+  @override
+  String get recapShareKicker => 'Twój miesiąc, gotowy do udostępnienia';
+
+  @override
+  String get recapTickWorkouts => 'Treningi';
+
+  @override
+  String get recapTickTime => 'Czas';
+
+  @override
+  String get recapTickVolume => 'Obciążenie';
+
+  @override
+  String get recapTickRecords => 'Rekordy';
+
+  @override
+  String recapAvg(int n) {
+    return 'Średnio $n min na trening';
+  }
+
+  @override
+  String get recapLiftKicker => 'Ćwiczenie miesiąca';
+
+  @override
+  String get recapBest => 'Najlepszy';
+
+  @override
+  String get recapTimes => 'Dni';
+
+  @override
+  String get recapDaysLabel => 'Dni';
+
+  @override
+  String get recapAvgLabel => 'Średnio';
+
+  @override
+  String recapCalendarLine(int workouts, int days) {
+    return 'Treningi: $workouts, dni: $days';
+  }
+
+  @override
+  String get recapFavLabel => 'Twój dzień';
+
+  @override
+  String get recapWatermark => 'darmowy dziennik treningów';
+
+  @override
+  String get recapTickSteps => 'Kroki';
+
+  @override
+  String get recapTickFood => 'Jedzenie';
+
+  @override
+  String get recapCardioKicker => 'Cardio';
+
+  @override
+  String recapCardioTime(int minutes, int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n treningach',
+      one: 'jednym treningu',
+    );
+    return '$minutes min w $_temp0';
+  }
+
+  @override
+  String recapCardioCount(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n treningu cardio',
+      many: '$n treningów cardio',
+      few: '$n treningi cardio',
+      one: 'Jeden trening cardio',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String recapCardioTop(String name) {
+    return 'Twój ulubiony: $name';
+  }
+
+  @override
+  String get recapStepsKicker => 'Przeszedłeś';
+
+  @override
+  String get recapStepsWord => 'kroków';
+
+  @override
+  String recapStepsAvg(String value) {
+    return 'Średnio $value dziennie';
+  }
+
+  @override
+  String recapStepsBest(String value, String date) {
+    return 'Najlepszy dzień: $value, $date';
+  }
+
+  @override
+  String get recapFoodKicker => 'Na Twoim talerzu';
+
+  @override
+  String get recapLiftRest => 'Tuż za nim';
+
+  @override
+  String recapSameAs(String month) {
+    return 'Tak samo jak w: $month';
+  }
+
+  @override
+  String recapMoreThan(String value, String month) {
+    return 'O $value więcej niż w: $month';
+  }
+
+  @override
+  String recapLessThan(String value, String month) {
+    return 'O $value mniej niż w: $month';
+  }
+
+  @override
+  String get recapTickMedals => 'Medale';
+
+  @override
+  String get recapTickSleep => 'Sen';
+
+  @override
+  String get recapMedalsKicker => 'Zdobyte medale';
+
+  @override
+  String recapMedalsMore(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: 'I jeszcze $n',
+      one: 'I jeszcze jeden',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recapSleepKicker => 'Spałeś';
+
+  @override
+  String get recapSleepAvg => 'średnio na noc';
+
+  @override
+  String recapSleepBest(String value, String date) {
+    return 'Najlepsza noc: $value, $date';
+  }
+
+  @override
+  String get recapCardSummary => 'Podsumowanie';
+
+  @override
+  String get recapCardCalendar => 'Kalendarz';
+
+  @override
+  String get recapCardLift => 'Ćwiczenie';
+
+  @override
+  String get recapPeakKicker => 'Twoja najcięższa sesja';
+
+  @override
+  String get recapTickPeak => 'Sesja';
+
+  @override
+  String get recapFreshKicker => 'Pierwszy raz w tym miesiącu';
+
+  @override
+  String recapFresh(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: 'nowego ćwiczenia',
+      many: 'nowych ćwiczeń',
+      few: 'nowe ćwiczenia',
+      one: 'nowe ćwiczenie',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recapTickFresh => 'Nowe';
+
+  @override
+  String recapStreak(int n) {
+    return 'Dni z rzędu: $n, Twoja najdłuższa seria';
+  }
+
+  @override
+  String recapYearAgo(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n treningu',
+      many: '$n treningów',
+      few: '$n treningi',
+      one: '1 trening',
+    );
+    return 'Rok temu: $_temp0';
+  }
+
+  @override
+  String recapForgot(String muscle) {
+    return 'W tym miesiącu pominięty: $muscle';
+  }
+
+  @override
+  String recapFoodProtein(int goal) {
+    return 'białka dziennie · cel $goal g';
+  }
+
+  @override
+  String recapFoodStarDays(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: 'Na talerzu $n dni',
+      one: 'Na talerzu 1 dzień',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get recapFoodProteinLabel => 'Białko · g/dzień';
+
+  @override
+  String get recapFoodGoalDays => 'Cel osiągnięty';
+
+  @override
+  String get recapFoodWaterLabel => 'Woda/dzień';
+
+  @override
+  String recapFoodTimes(int n) {
+    String _temp0 = intl.Intl.pluralLogic(n, locale: localeName, other: '$n dni', one: '1 dzień');
+    return '$_temp0';
+  }
+
+  @override
+  String get recapFoodStarKicker => 'Twoje jedzenie miesiąca';
+
+  @override
+  String get onbSpeedTitle => 'Make it run smooth';
+
+  @override
+  String get onbSpeedWhy =>
+      'Your phone seems to be working hard. Turn these off and everything will flow better: try them and watch the preview.';
+
+  @override
+  String get onbSpeedMotion => 'Animations';
+
+  @override
+  String get onbSpeedBlurHint => 'Frosted glass behind sheets and bars';
+
+  @override
+  String get onbSpeedMotionHint => 'Screens and sheets that slide in';
+
+  @override
+  String get onbSpeedLater => 'You can change it anytime in Settings › General › Performance.';
+
+  @override
+  String get notifSoundSetting => 'Notification sounds';
+
+  @override
+  String get notifSoundRowHint => 'How each kind of reminder sounds';
+
+  @override
+  String get notifSoundHint =>
+      'Pick a sound for each kind of reminder. From phone opens your phone sounds, and on most phones you can add your own song there.';
+
+  @override
+  String get notifSoundTrain => 'Workouts';
+
+  @override
+  String get notifSoundFood => 'Food, supplements and fasting';
+
+  @override
+  String get notifSoundOther => 'Photos and measurements';
+
+  @override
+  String get notifSoundNormal => 'Normal';
+
+  @override
+  String get notifSoundPhone => 'From phone';
+
+  @override
+  String get notifSoundSilent => 'Silent';
+
+  @override
+  String get notifSoundPhoneHint => 'Tap one to hear it. It saves right away.';
+
+  @override
+  String get notifSoundMore => 'Another file…';
+
+  @override
+  String get notifSoundChange => 'Change';
+
+  @override
+  String get workoutNoteAdd => 'Pinned note: seat, grip, machine…';
+
+  @override
+  String get autoProgressSetting => 'Auto progression';
+
+  @override
+  String get autoProgressRowHint => 'What it suggests for next time';
+
+  @override
+  String get autoProgressOff => 'Off';
+
+  @override
+  String get autoProgressWeight => 'Add weight';
+
+  @override
+  String get autoProgressReps => 'Add reps';
+
+  @override
+  String get autoProgressHint =>
+      'When you start a workout, GymMane fills in the next step for each exercise. With Add reps you add one rep per set up to 12, then the weight goes up and you start again at 8. You can still tune each exercise on its page.';
+
+  @override
+  String get noteFolders => 'Folders';
+
+  @override
+  String get noteFolderNew => 'New folder';
+
+  @override
+  String get noteFolderEdit => 'Edit folder';
+
+  @override
+  String get noteFolderName => 'Folder name';
+
+  @override
+  String get noteFolderLabel => 'Folder';
+
+  @override
+  String get noteFolderNone => 'No folder';
+
+  @override
+  String get noteFolderDelete => 'Delete the folder?';
+
+  @override
+  String get noteFolderDeleteBody => 'Notes are kept: they just leave the folder.';
+
+  @override
+  String get foodArchivedToast => 'Food archived';
+
+  @override
+  String get planArchivedToast => 'Plan archived';
+
+  @override
+  String get suppArchivedToast => 'Supplement archived';
+
+  @override
+  String get voiceSetting => 'Workout voice';
+
+  @override
+  String get voiceSettingHint =>
+      'Says your next set and counts down the end of the rest, with the phone voice';
+
+  @override
+  String get voiceHello => 'Voice on';
+
+  @override
+  String voiceRest(String time) {
+    return 'Rest $time.';
+  }
+
+  @override
+  String voiceNext(String name, String load) {
+    return 'Next: $name, $load.';
+  }
+
+  @override
+  String voiceLoad(int reps, String weight) {
+    return '$reps reps at $weight';
+  }
+
+  @override
+  String voiceReps(int reps) {
+    return '$reps reps';
+  }
+
+  @override
+  String get voiceGo => 'Let\'s go!';
+
+  @override
+  String get deloadSetting => 'Deload week';
+
+  @override
+  String get deloadOff => 'Never';
+
+  @override
+  String deloadEvery(int weeks) {
+    return 'Every $weeks weeks';
+  }
+
+  @override
+  String get deloadHint =>
+      'Every few weeks, an easier one to recover: half the sets and 10 % less weight. That week does not count for progression.';
+
+  @override
+  String get deloadRowHint => 'An easy week every few weeks';
+
+  @override
+  String get deloadNow => 'Deload week';
+
+  @override
+  String get deloadNowHint => 'Today, half the sets and 10 % less weight';
+
+  @override
+  String deloadIn(int weeks) {
+    String _temp0 = intl.Intl.pluralLogic(
+      weeks,
+      locale: localeName,
+      other: 'In $weeks weeks',
+      one: 'Next week',
+      zero: 'This week',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get deloadSkip => 'Train as usual';
+
+  @override
+  String get voiceSheetTitle => 'How the voice works';
+
+  @override
+  String get voicePointRest => 'When you tick a set, it tells you the rest time and what comes next.';
+
+  @override
+  String get voicePointCount => 'It counts 3, 2, 1 at the end of the rest and calls you back.';
+
+  @override
+  String get voicePointPhone => 'It uses your phone\'s voice and plays over your music.';
+
+  @override
+  String get voiceTry => 'Try the voice';
+
+  @override
+  String get voiceNoEngine => 'Your phone has no voice engine turned on.';
+
+  @override
+  String get voiceNoLang => 'Your language\'s voice is missing. Download it in your phone\'s voice settings.';
+
+  @override
+  String get voiceOpenSettings => 'Voice settings';
+
+  @override
+  String voiceMinutes(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count minutes',
+      one: '1 minute',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String voiceSeconds(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count seconds',
+      one: '1 second',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get voiceAnd => 'and';
+
+  @override
+  String get repRecordsTitle => 'Best weight by reps';
+
+  @override
+  String suppUnitCapsule(int n) {
+    String _temp0 = intl.Intl.pluralLogic(n, locale: localeName, other: 'capsules', one: 'capsule');
+    return '$_temp0';
+  }
+
+  @override
+  String suppUnitPill(int n) {
+    String _temp0 = intl.Intl.pluralLogic(n, locale: localeName, other: 'pills', one: 'pill');
+    return '$_temp0';
+  }
+
+  @override
+  String suppUnitScoop(int n) {
+    String _temp0 = intl.Intl.pluralLogic(n, locale: localeName, other: 'scoops', one: 'scoop');
+    return '$_temp0';
+  }
+
+  @override
+  String suppUnitDrop(int n) {
+    String _temp0 = intl.Intl.pluralLogic(n, locale: localeName, other: 'drops', one: 'drop');
+    return '$_temp0';
+  }
+
+  @override
+  String suppUnitServing(int n) {
+    String _temp0 = intl.Intl.pluralLogic(n, locale: localeName, other: 'servings', one: 'serving');
+    return '$_temp0';
+  }
+
+  @override
+  String get suppUnitIu => 'IU';
+
+  @override
+  String get suppLeft => 'Left';
+
+  @override
+  String get suppLeftHint => 'Optional';
+
+  @override
+  String suppLeftFor(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: 'Left for $n days',
+      one: 'Left for 1 day',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String suppForDays(int n) {
+    String _temp0 = intl.Intl.pluralLogic(n, locale: localeName, other: '$n days', one: '1 day');
+    return '$_temp0';
+  }
+
+  @override
+  String get suppRanOut => 'Ran out';
+
+  @override
+  String get lightSession => 'Light session';
+
+  @override
+  String get lightSessionHint => 'Saved in your history and stats, but it won\'t change your next targets.';
+
+  @override
+  String get lightSessionNote => 'Doesn\'t count for progression';
+
+  @override
+  String get lightSessionOff => 'Turn off';
+
+  @override
+  String get eachSideRepsHint =>
+      'Log the left and right reps separately. Progression follows the weaker side.';
+
+  @override
+  String get repsLeftCol => 'REPS L';
+
+  @override
+  String get repsRightCol => 'REPS R';
+
+  @override
+  String get repsLeftTitle => 'LEFT REPS';
+
+  @override
+  String get repsRightTitle => 'RIGHT REPS';
+
+  @override
+  String sidesReps(int l, int r) {
+    return 'L$l R$r';
+  }
+}
