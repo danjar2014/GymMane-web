@@ -1,7 +1,7 @@
 services:
   - type: web
     runtime: static
-    name: gymmane
+    name: souyzgym
     staticPublishPath: ./dist
     headers:
       - path: /flutter_service_worker.js

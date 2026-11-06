@@ -26,13 +26,13 @@
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="apple-mobile-web-app-title" content="GymMane">
+  <meta name="apple-mobile-web-app-title" content="SouyzGym">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png"/>
 
-  <title>GymMane</title>
+  <title>SouyzGym</title>
   <link rel="manifest" href="manifest.json">
 </head>
 <body style="background:#0C0B0A;margin:0">
@@ -45,5 +45,28 @@
     * https://docs.flutter.dev/platform-integration/web/initialization
   -->
   <script src="flutter_bootstrap.js" async></script>
+
+  <button id="install-btn" hidden aria-label="Installer SouyzGym">Installer l'app</button>
+  <style>
+    #install-btn{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom));z-index:99999;
+      background:#fff;color:#0C0B0A;border:0;border-radius:100px;padding:12px 20px;font:700 14px system-ui,sans-serif;
+      box-shadow:0 4px 18px rgba(0,0,0,.45);cursor:pointer}
+    #install-btn[hidden]{display:none}
+  </style>
+  <script>
+    (function(){
+      var btn=document.getElementById('install-btn'), deferred=null;
+      var standalone=matchMedia('(display-mode: standalone)').matches||navigator.standalone===true;
+      if(standalone)return;
+      window.addEventListener('beforeinstallprompt',function(e){e.preventDefault();deferred=e;btn.hidden=false;});
+      window.addEventListener('appinstalled',function(){btn.hidden=true;deferred=null;});
+      var ios=/iphone|ipad|ipod/i.test(navigator.userAgent)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1);
+      if(ios)btn.hidden=false;
+      btn.addEventListener('click',function(){
+        if(deferred){deferred.prompt();deferred.userChoice.finally(function(){deferred=null;btn.hidden=true;});}
+        else if(ios){alert("Pour installer : touchez le bouton Partager de Safari, puis « Sur l'écran d'accueil ».");}
+      });
+    })();
+  </script>
 </body>
 </html>

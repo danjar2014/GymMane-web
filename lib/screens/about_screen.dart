@@ -115,7 +115,7 @@ class AboutScreen extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text('GymMane',
+                Text('SouyzGym',
                     style: AppTheme.f(33, weight: FontWeight.w800, color: gc.text, letterSpacing: -0.5)),
                 const SizedBox(height: 10),
                 Container(
@@ -127,6 +127,9 @@ class AboutScreen extends StatelessWidget {
                   child: Text(t.version(kAppVersion),
                       style: AppTheme.f(11.5, weight: FontWeight.w600, color: gc.textSecondary)),
                 ),
+                const SizedBox(height: 8),
+                Text('Based on GymMane by InlitX',
+                    style: AppTheme.f(11.5, weight: FontWeight.w500, color: gc.textSecondary)),
               ],
             ),
           ),
